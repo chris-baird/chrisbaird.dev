@@ -1,0 +1,39 @@
+{
+    "name": "chrisbaird.io-api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "engines": {
+      "node": "12.x"
+    },
+    "scripts": {
+      "test": "jest",
+      "start": "concurrently \"cd client && npm run start\" \"nodemon server.js\""
+    },
+    "jest": {
+      "testEnvironment": "node"
+    },
+    "keywords": [
+ 
+    ],
+    "author": "Chris Baird",
+    "license": "MIT",
+    "dependencies": {
+      "bcrypt": "^5.0.0",
+      "body-parser": "^1.19.0",
+      "concurrently": "^5.3.0",
+      "dotenv": "^8.2.0",
+      "express": "^4.17.1",
+      "jsonwebtoken": "^8.5.1",
+      "mongoose": "^5.10.4",
+      "morgan": "^1.10.0",
+      "nodemon": "^2.0.4",
+      "passport": "^0.4.1",
+      "passport-jwt": "^4.0.0",
+      "passport-local": "^1.0.0"
+    },
+    "devDependencies": {
+      "jest": "^24.9.0",
+      "supertest": "^4.0.2"
+    }
+  }
