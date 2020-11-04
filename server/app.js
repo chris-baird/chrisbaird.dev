@@ -27,7 +27,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 console.log(__dirname);
 // Serves up react app
-app.use(express.static(join(__dirname, "/client/build")));
+app.use(express.static(join(__dirname, "../client/build")));
 
 // Routes configuration
 app.use(routes);
