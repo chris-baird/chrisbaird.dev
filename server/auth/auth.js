@@ -66,11 +66,13 @@ passport.use(
         //If the passwords match, it returns a value of true.
         const validate = await user.isValidPassword(password);
         if (!validate) {
+          console.log(validate);
           return done(null, false, { message: "Wrong Password" });
         }
         //Send the user information to the next middleware
         return done(null, user, { message: "Logged in Successfully" });
       } catch (error) {
+        console.log(error);
         return done(error);
       }
     }

@@ -6,6 +6,6 @@ const htmlRoutes = require("./html-routes");
 // router.use("/", htmlRoutes);
 
 //Privates routes with auth middleware
-router.use("/user", apiRoutes);
+router.use("/api", apiRoutes);
 
 module.exports = router;

@@ -5,13 +5,9 @@ const UserModel = require("../models/user");
 module.exports = {
   signUp: async (req, res) => {
     try {
-      console.log("INSIDE USER CONTROLLER");
-      console.log(req.user.id);
       const user = await UserModel.findByIdAndUpdate(req.user.id, {
         newAccount: false,
       });
-      console.log("UPDATED USER");
-      console.log(user);
       res.json({
         message: "Signup successful",
         user: user || "idk",
@@ -23,13 +19,13 @@ module.exports = {
   login: async (req, res, next) => {
     passport.authenticate("login", async (err, user, info) => {
       try {
-        console.log(req.body);
         if (err || !user) {
           const error = new Error("An Error occurred");
           return next(error);
         }
         req.login(user, { session: false }, async (error) => {
           if (error) return next(error);
+          console.log(error);
           //We don't want to store the sensitive information such as the
           //user password in the token so we pick only the email and id
           const body = { _id: user._id, email: user.email };
