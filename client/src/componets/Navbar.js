@@ -22,11 +22,11 @@ const Example = (props) => {
 
   return (
     <div>
-      <Navbar color="light shadow" light expand="md">
+      <Navbar color="dark shadow" light expand="md">
         <Container>
           <NavbarBrand
             href="/"
-            className="p-3 border border-dark rounded-lg font-weight-bolder"
+            className="p-3 border border-light text-white rounded-lg font-weight-bolder"
           >
             CB
           </NavbarBrand>
@@ -34,19 +34,29 @@ const Example = (props) => {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem className="ml-auto">
-                <NavLink href="/components/">About</NavLink>
+                <NavLink className="text-white" href="/components/">
+                  About
+                </NavLink>
               </NavItem>
               <NavItem className="ml-auto">
-                <NavLink href="/components/">Portfolio</NavLink>
+                <NavLink className="text-white" href="/components/">
+                  Portfolio
+                </NavLink>
               </NavItem>
               <NavItem className="ml-auto">
-                <NavLink href="/components/">Work Experience</NavLink>
+                <NavLink className="text-white" href="/components/">
+                  Work Experience
+                </NavLink>
               </NavItem>
               <NavItem className="ml-auto">
-                <NavLink href="/components/">Developer Commitment</NavLink>
+                <NavLink className="text-white" href="/components/">
+                  Developer Commitment
+                </NavLink>
               </NavItem>
               <NavItem className="ml-auto">
-                <NavLink href="/components/">Contact</NavLink>
+                <NavLink className="text-white" href="/components/">
+                  Contact
+                </NavLink>
               </NavItem>
             </Nav>
           </Collapse>

@@ -6,6 +6,7 @@ import Technologies from "./sections/Technologies";
 import Work from "./sections/Work";
 import Commitment from "./sections/Commitment";
 import Contact from "./sections/Contact";
+import Footer from "./sections/Footer";
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,7 @@ function App() {
       <Work />
       <Commitment />
       <Contact />
+      <Footer />
     </div>
   );
 }

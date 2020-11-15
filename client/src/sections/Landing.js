@@ -13,7 +13,7 @@ export default function Landing() {
       <Container className="pt-5 pb-5">
         <Row>
           <Col
-            className="text-warning"
+            className="text-white"
             xs="12"
             sm="12"
             md={{ size: 8, offset: 5 }}
