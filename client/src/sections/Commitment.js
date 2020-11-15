@@ -5,7 +5,7 @@ export default function Commitment() {
   return (
     <section className="bg-light pt-5">
       <Container>
-        <h2 className="text-center">My Developer Commitment</h2>
+        <h2 className="text-center mb-5">My Developer Commitment</h2>
         <p className="lead">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in
           augue eget ipsum imperdiet condimentum. Quisque consequat id quam sit

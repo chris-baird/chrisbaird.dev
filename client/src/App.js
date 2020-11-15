@@ -5,6 +5,7 @@ import About from "./sections/About";
 import Technologies from "./sections/Technologies";
 import Work from "./sections/Work";
 import Commitment from "./sections/Commitment";
+import Contact from "./sections/Contact";
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,7 @@ function App() {
       <Technologies />
       <Work />
       <Commitment />
+      <Contact />
     </div>
   );
 }
