@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col, Button } from "reactstrap";
 export default function Landing() {
   return (
     <section
@@ -10,7 +10,7 @@ export default function Landing() {
         backgroundPosition: "center",
       }}
     >
-      <Container className="mb-5 pt-5 pb-5">
+      <Container className="pt-5 pb-5">
         <Row>
           <Col
             className="text-warning"
@@ -29,6 +29,12 @@ export default function Landing() {
               approach to solving problems. Proficient in learning new
               technologies and implementing solutions.
             </p>
+            <Button color="danger" className="mr-2">
+              View My Work
+            </Button>
+            <Button color="success" className="mr-2">
+              Contact Me
+            </Button>
           </Col>
         </Row>
       </Container>
