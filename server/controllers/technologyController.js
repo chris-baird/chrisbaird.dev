@@ -13,8 +13,8 @@ module.exports = {
       // Test log start
       console.log(req.files);
       // End
-      const newDbTechnology = await TechnologyModel.create(req.body);
-      res.json(newDbTechnology);
+      // const newDbTechnology = await TechnologyModel.create(req.body);
+      // res.json(newDbTechnology);
     } catch (error) {
       res.json(error);
     }
