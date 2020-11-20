@@ -6,20 +6,21 @@ import { getTechnologies } from "../helpers/api";
 export default function Technologies() {
   const [technologies, setTechnologies] = useState([]);
 
-  useEffect(async () => {
-    console.log(technologies);
-    if (technologies.length === 0) {
-      console.log("inside if");
-      try {
-        const apiTechnolgies = await getTechnologies();
-        console.log(apiTechnolgies);
+  useEffect(() => {
+    async function getTechnologyData() {
+      if (technologies.length === 0) {
+        console.log("inside if");
+        try {
+          const apiTechnolgies = await getTechnologies();
 
-        setTechnologies(apiTechnolgies);
-      } catch (error) {
-        console.log(error);
+          setTechnologies(apiTechnolgies);
+        } catch (error) {
+          console.log(error);
+        }
       }
     }
-  }, []);
+    getTechnologyData();
+  }, [technologies]);
 
   return (
     <section className="bg-light pb-5">
