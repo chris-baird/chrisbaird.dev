@@ -1,6 +1,4 @@
 const express = require("express");
-import * as multer from "multer";
-import MulterGoogleCloudStorage from "multer-google-storage";
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
@@ -20,11 +18,6 @@ mongoose.connect("mongodb://127.0.0.1:27017/passport-jwt");
 mongoose.connection.on("error", (error) => console.log(error));
 // Mongoose promise configuration
 mongoose.Promise = global.Promise;
-
-// Multer file upload middleware
-const uploadHandler = multer({
-  storage: new MulterGoogleCloudStorage(),
-});
 
 // Loading auth middleware
 require("./auth/auth");
