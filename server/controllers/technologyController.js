@@ -10,11 +10,11 @@ module.exports = {
   },
   createTechnology: async (req, res) => {
     try {
-      // Test log start
-      console.log(req.files);
-      // End
-      // const newDbTechnology = await TechnologyModel.create(req.body);
-      // res.json(newDbTechnology);
+      const dBTechnology = await TechnologyModel.create({
+        imageUrl: req.files[0].path,
+        technologyName: req.body.technologyName,
+      });
+      res.json(dBTechnology);
     } catch (error) {
       res.json(error);
     }
