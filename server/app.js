@@ -3,12 +3,12 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
 const { join } = require("path");
-const routes = require("./routes");
+
 const app = express();
 
 // Loading dotenv file
 require("dotenv").config();
-
+const routes = require("./routes");
 // Logger middleware
 morgan(":method :url :status :res[content-length] - :response-time ms");
 
