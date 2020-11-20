@@ -6,18 +6,21 @@ export default function TechnologyForm() {
   return (
     <Formik
       initialValues={{
-        technology: "",
+        technologyName: "",
         file: "",
       }}
-      onSubmit={(values) => {
+      onSubmit={async (values) => {
         console.log(values);
         let formData = new FormData();
         formData.append("file", values.file);
-        formData.append("technology", values.technology);
-        fetch("/api/technologies", {
+        formData.append("technologyName", values.technologyName);
+        const res = await fetch("/api/technologies", {
           method: "POST",
           body: formData,
         });
+
+        const data = await res.json();
+        console.log(data);
       }}
     >
       {({ setFieldValue, handleSubmit, handleChange, values }) => (
@@ -27,10 +30,10 @@ export default function TechnologyForm() {
             <Input
               type="text"
               id="technologyName"
-              name="technology"
+              name="technologyName"
               onChange={handleChange}
               placeholder="React, Node, Javascript, ETC....."
-              value={values.technology}
+              value={values.technologyName}
             />
           </FormGroup>
           <FormGroup>
