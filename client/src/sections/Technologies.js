@@ -19,8 +19,14 @@ export default function Technologies() {
 
   const toggle = () => setModal(!modal);
 
+  const handleSetTechnologies = (newTechnology) => {
+    const technologiesArray = [...technologies, newTechnology];
+    return setTechnologies(technologiesArray);
+  };
+
   useEffect(() => {
     async function getTechnologyData() {
+      setModal(false);
       if (technologies.length === 0) {
         console.log("inside if");
         try {
@@ -46,7 +52,7 @@ export default function Technologies() {
           <Modal isOpen={modal} toggle={toggle} className="">
             <ModalHeader toggle={toggle}>Modal title</ModalHeader>
             <ModalBody>
-              <TechnologyForm />
+              <TechnologyForm handleSetTechnologies={handleSetTechnologies} />
             </ModalBody>
             <ModalFooter>
               <Button color="primary" onClick={toggle}>
