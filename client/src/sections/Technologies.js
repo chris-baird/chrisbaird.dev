@@ -7,7 +7,6 @@ import {
   Modal,
   ModalBody,
   ModalHeader,
-  ModalFooter,
   Row,
 } from "reactstrap";
 import { getTechnologies } from "../helpers/api";
