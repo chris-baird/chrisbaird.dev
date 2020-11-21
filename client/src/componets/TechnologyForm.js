@@ -2,7 +2,28 @@ import React from "react";
 import { Formik } from "formik";
 import { Button, Form, FormGroup, Input, Label } from "reactstrap";
 
-export default function TechnologyForm() {
+export default function TechnologyForm({ handleSetTechnologies }) {
+  // Formats form data into multipart/form-data object
+  const handleFormatFormData = (formData) => {
+    let formatedFormData = new FormData();
+    formatedFormData.append("technologyName", formData.technologyName);
+    formatedFormData.append("file", formData.file);
+    return formatedFormData;
+  };
+  // Posts new technology to web api and returns a database object copy
+  const handleTechnologyPost = async (formatedFormData) => {
+    try {
+      const res = await fetch("/api/technologies", {
+        method: "POST",
+        body: formatedFormData,
+      });
+      const newTechnology = await res.json();
+      return newTechnology;
+    } catch (error) {
+      throw error;
+    }
+  };
+
   return (
     <Formik
       initialValues={{
@@ -10,17 +31,9 @@ export default function TechnologyForm() {
         file: "",
       }}
       onSubmit={async (values) => {
-        console.log(values);
-        let formData = new FormData();
-        formData.append("file", values.file);
-        formData.append("technologyName", values.technologyName);
-        const res = await fetch("/api/technologies", {
-          method: "POST",
-          body: formData,
-        });
-
-        const data = await res.json();
-        console.log(data);
+        const formatedFormData = handleFormatFormData(values);
+        const newTechnology = await handleTechnologyPost(formatedFormData);
+        return handleSetTechnologies(newTechnology);
       }}
     >
       {({ setFieldValue, handleSubmit, handleChange, values }) => (
