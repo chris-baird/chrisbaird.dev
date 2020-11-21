@@ -60,7 +60,9 @@ export default function TechnologyForm({ handleSetTechnologies }) {
               }}
             ></Input>
           </FormGroup>
-          <Button type="submit">Submit</Button>
+          <Button color="success" type="submit">
+            Submit
+          </Button>
         </Form>
       )}
     </Formik>

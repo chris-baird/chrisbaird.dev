@@ -46,22 +46,20 @@ export default function Technologies() {
       <Container>
         <h2 className="mt-5 mb-5 pt-5 text-center">Technologies I Know</h2>
         <div>
-          <Button color="danger" onClick={toggle}>
-            Test
+          <Button
+            className="d-block mx-auto mb-3"
+            color="danger"
+            onClick={toggle}
+          >
+            Add A New Technology
           </Button>
           <Modal isOpen={modal} toggle={toggle} className="">
-            <ModalHeader toggle={toggle}>Modal title</ModalHeader>
+            <ModalHeader className="font-weight-bolder" toggle={toggle}>
+              Add A New Technology
+            </ModalHeader>
             <ModalBody>
               <TechnologyForm handleSetTechnologies={handleSetTechnologies} />
             </ModalBody>
-            <ModalFooter>
-              <Button color="primary" onClick={toggle}>
-                Do Something
-              </Button>{" "}
-              <Button color="secondary" onClick={toggle}>
-                Cancel
-              </Button>
-            </ModalFooter>
           </Modal>
         </div>
         <Row>
