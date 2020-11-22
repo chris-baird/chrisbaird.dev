@@ -31,7 +31,7 @@ export default function Technologies() {
         try {
           const apiTechnolgies = await getTechnologies();
 
-          setTechnologies(apiTechnolgies);
+          setTechnologies(apiTechnolgies.length !== 0 ? apiTechnolgies : [{}]);
         } catch (error) {
           console.log(error);
         }
