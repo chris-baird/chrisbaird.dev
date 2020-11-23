@@ -10,15 +10,15 @@ module.exports = {
   },
   createEmail: async (req, res) => {
     try {
-      const dbEmail = await EmailModel.create({
+      EmailModel.create({
         name: req.body.name,
         email: req.body.email,
         subject: req.body.subject,
         message: req.body.message,
       });
-      res.json(dbEmail);
+      res.json(true);
     } catch (error) {
-      res.json(error);
+      res.json(false);
     }
   },
 };
