@@ -50,7 +50,7 @@ export default function EmailForm({ handleSetEmails }) {
           .required("A subject is required."),
         message: Yup.string()
           .min(1, "You must enter at least one character.")
-          .max(350, "Must be less than 350 characters.")
+          .max(500, "Must be less than 500 characters.")
           .required("A message is required."),
       })}
       onSubmit={async (values, { setSubmitting, resetForm }) => {

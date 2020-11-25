@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Card, Col, Row } from "reactstrap";
 
-export default function MessageView({ selectedMessage }) {
+export default function MessageView({ selectedMessage, deleteMessageById }) {
   return (
     <Card className="mb-3">
       <Row className="p-3">
@@ -25,7 +25,11 @@ export default function MessageView({ selectedMessage }) {
         </Col>
       </Row>
 
-      <Button className="m-3 w-25 ml-auto" color="danger">
+      <Button
+        className="m-3 w-25 ml-auto"
+        color="danger"
+        onClick={() => deleteMessageById(selectedMessage._id)}
+      >
         Delete Message
       </Button>
     </Card>

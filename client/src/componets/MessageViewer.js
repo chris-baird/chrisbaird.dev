@@ -3,26 +3,29 @@ import MessageList from "./MessageList";
 import MessageView from "./MessageView";
 import { getMessages } from "../helpers/api";
 import { Col, Container, Row } from "reactstrap";
-
+import { deleteDatabaseMessageById } from "../helpers/api";
 export default function MessageViewer() {
-  const [messages, setMessages] = useState([]);
-  const [selectedMessage, setSelectedMessage] = useState({});
+  const [messages, setMessages] = useState(null);
+  const [selectedMessage, setSelectedMessage] = useState(null);
 
-  const deleteMessage = async (messageId) => {
-    const response = await fetch("/api/messages/" + messageId, {
-      method: "POST",
-    });
-    const status = await response.json();
+  const handleDeleteMessageById = async (id) => {
+    try {
+      const deletedMessage = await deleteDatabaseMessageById(id);
+      const newMessagesArray = messages.filter(
+        (message) => message._id !== deletedMessage._id
+      );
+      setSelectedMessage(null);
+      setMessages(newMessagesArray);
+    } catch (error) {
+      throw error;
+    }
   };
 
   useEffect(() => {
-    console.log(selectedMessage);
-    console.log("fdssd");
     async function getMessageData() {
-      if (messages.length === 0) {
+      if (!messages) {
         try {
           const messageData = await getMessages();
-          console.log(messageData);
           return setMessages(messageData);
         } catch (error) {
           throw error;
@@ -43,7 +46,7 @@ export default function MessageViewer() {
           xl={{ size: 4, order: 1 }}
         >
           <p className="font-weight-bold">All Messages</p>
-          {messages.length > 0 ? (
+          {messages !== null ? (
             <MessageList
               messages={messages}
               setSelectedMessage={setSelectedMessage}
@@ -60,11 +63,12 @@ export default function MessageViewer() {
           xl="8"
         >
           <p className="font-weight-bold">Current Message</p>
-          {selectedMessage.name ? (
-            <MessageView selectedMessage={selectedMessage} />
-          ) : (
-            <p>No Message Selected</p>
-          )}
+          {selectedMessage ? (
+            <MessageView
+              selectedMessage={selectedMessage}
+              deleteMessageById={handleDeleteMessageById}
+            />
+          ) : null}
         </Col>
       </Row>
     </Container>

@@ -16,3 +16,14 @@ export const getMessages = async () => {
     throw error;
   }
 };
+export const deleteDatabaseMessageById = async (id) => {
+  try {
+    const response = await fetch("/api/messages/" + id, {
+      method: "DELETE",
+    });
+    const deletedMessage = await response.json();
+    return deletedMessage;
+  } catch (error) {
+    throw error;
+  }
+};

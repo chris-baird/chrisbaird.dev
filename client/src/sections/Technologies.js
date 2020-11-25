@@ -27,7 +27,6 @@ export default function Technologies() {
     async function getTechnologyData() {
       setModal(false);
       if (technologies.length === 0) {
-        console.log("inside if");
         try {
           const apiTechnolgies = await getTechnologies();
 

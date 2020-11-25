@@ -21,4 +21,12 @@ module.exports = {
       res.json(false);
     }
   },
+  deleteEmailById: async (req, res) => {
+    try {
+      const deletedEmail = await EmailModel.findByIdAndDelete(req.params.id);
+      res.json(deletedEmail);
+    } catch (error) {
+      res.json(error);
+    }
+  },
 };
