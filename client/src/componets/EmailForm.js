@@ -18,7 +18,7 @@ export default function EmailForm({ handleSetEmails }) {
   // Posts new email to web api and returns a database object copy
   const handleEmailPost = async (formData) => {
     try {
-      const res = await fetch("/api/emails", {
+      const res = await fetch("/api/messages", {
         method: "POST",
         body: JSON.stringify(formData),
         headers: { "Content-type": "application/json; charset=UTF-8" },

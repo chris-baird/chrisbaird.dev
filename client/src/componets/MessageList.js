@@ -1,24 +1,24 @@
 import React from "react";
 import { Card, Col, Row } from "reactstrap";
-export default function MessageList() {
-  const CARDS = [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2];
+export default function MessageList({ messages, setSelectedMessage }) {
   return (
     <div style={{ maxHeight: "500px", overflowX: "hidden", overflowY: "auto" }}>
-      {CARDS.map((card) => (
-        <Card className="mb-2 p-2">
+      {messages.map((message) => (
+        <Card
+          className="mb-2 p-2"
+          onClick={() => setSelectedMessage(message)}
+          style={{ cursor: "pointer" }}
+        >
           <Row>
             <Col>
-              <p className="float-left font-weight-bold">Chris</p>
+              <p className="float-left font-weight-bold">{message.name}</p>
             </Col>
             <Col>
               <small className="">11:22 PM Tues Nov 23, 2020</small>
             </Col>
           </Row>
-          <p className="font-weight-bold">Test Subject</p>
-          <p>
-            Reprehenderit in sint sit cupidatat ullamco ipsum aliqua do non do
-            qui...
-          </p>
+          <p className="font-weight-bold">{message.subject}</p>
+          <p>{message.message}</p>
         </Card>
       ))}
     </div>

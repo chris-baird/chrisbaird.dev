@@ -4,6 +4,6 @@ const technologyRoutes = require("./technologyRoutes");
 const emailRoutes = require("./emailRoutes");
 router.use("/user", userRoutes);
 router.use("/technologies", technologyRoutes);
-router.use("/emails", emailRoutes);
+router.use("/messages", emailRoutes);
 
 module.exports = router;
