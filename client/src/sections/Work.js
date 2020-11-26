@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row } from "reactstrap";
 import WorkCard from "../componets/WorkCard";
+import workPlaces from "../helpers/work.json";
 
 export default function Work() {
   return (
@@ -8,11 +9,14 @@ export default function Work() {
       <Container className="mt-5 mb-5">
         <h2 className="mb-5 text-center">Places I Have Worked</h2>
         <Row>
-          <WorkCard />
-          <WorkCard />
-          <WorkCard />
-          <WorkCard />
-          <WorkCard />
+          {workPlaces.map((workplace) => (
+            <WorkCard
+              imageUrl={workplace.imageUrl}
+              companyName={workplace.companyName}
+              position={workplace.position}
+              points={workplace.points}
+            />
+          ))}
         </Row>
       </Container>
     </section>

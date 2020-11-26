@@ -1,0 +1,28 @@
+[{
+    "imageUrl": "./assets/images/work/jba.png",
+    "companyName" : "Jones Baseball Academy",
+    "position" : "Contract Developer",
+    "points" : ["Designed and developed a custom business website.","Increased new client business by 200%.","Implemented Calendly booking system."]
+
+},
+{
+    "imageUrl": "./assets/images/work/JC-Logo-Crop.jpg",
+    "companyName" : "Joshaua Christopher Full Service Salon",
+    "position" : "Contract Developer",
+    "points" : ["Converted old website to new Angular platform.","Search Engine Optimization","Custom Email Mailer service"]
+
+},
+{
+    "imageUrl": "./assets/images/work/PCELOGO.jpg",
+    "companyName" : "Pacific Coast Entertainment",
+    "position" : "Contract Developer",
+    "points" : ["Developed a streaming landing page for a virtual graduation ceremony commencement.","Utilized box cast Livestream technology for timed video release."]
+
+},
+{
+    "imageUrl": "./assets/images/work/TrilogyEd.svg",
+    "companyName" : "Trilogy Education Services",
+    "position" : "Senior Tutor/Teaching Assistant",
+    "points" : ["Teaches Full Stack Web Development, including MongoDB, React, Node.", "Over 600 hours of one on one remote tutoring sessions teaching fundamentals and critical concepts of web development."]
+
+}]
