@@ -14,6 +14,7 @@ import {
   NavItem,
   NavLink,
 } from "reactstrap";
+import LoginForm from "./LoginForm";
 
 const Example = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -73,15 +74,9 @@ const Example = (props) => {
       </Navbar>
       <Modal isOpen={modal} toggle={toggleModal}>
         <ModalHeader toggle={toggleModal}>Admin Login</ModalHeader>
-        <ModalBody></ModalBody>
-        <ModalFooter>
-          <Button color="primary" onClick={toggleModal}>
-            Login
-          </Button>{" "}
-          <Button color="secondary" onClick={toggleModal}>
-            Cancel
-          </Button>
-        </ModalFooter>
+        <ModalBody>
+          <LoginForm />
+        </ModalBody>
       </Modal>
     </div>
   );
