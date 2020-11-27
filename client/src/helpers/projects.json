@@ -1,0 +1,43 @@
+[{
+    "projectName": "Chrisbaird.dev",
+    "imageUrl": "./assets/images/projects/projectTest.png",
+    "applicationType" : "Full Stack",
+    "technologies" : ["React", "Node", "Express", "MongoDB"],
+    "features": ["Authentication system", "Image uploads", "REST API"],
+    "liveUrl" :"https://chrisbaird.dev",
+    "repoUrl" : null
+},{
+    "projectName": "Jones Baseball Academy",
+    "imageUrl": "./assets/images/projects/jbaSS.png",
+    "applicationType" : "Front End",
+    "technologies" : ["HTML5", "CSS3", "JavaScript"],
+    "features": ["Custom Styling", "Call To Action Link", "Single Page App"],
+    "liveUrl" :"http://www.jonesbaseballacademy.com",
+    "repoUrl" : null
+},{
+    "projectName": "The SAE2020",
+    "imageUrl": "./assets/images/projects/THESAE2020.jpg.png",
+    "applicationType" : "Front End",
+    "technologies" : ["HTML5", "CSS3", "JavaScript"],
+    "features": ["Custom Styling, Responsive design", "Streaming system with on demand download"],
+    "liveUrl" :"http://www.thesae2020.com",
+    "repoUrl" : null
+},
+{
+    "projectName": "Joshua Christopher Full Service Salon Spa",
+    "imageUrl": "./assets/images/projects/JCSALON.png",
+    "applicationType" : "Front End",
+    "technologies" : ["Angular", "TypeScript"],
+    "features": ["Single Page Application powered by Angular", "Fully Responsive"],
+    "liveUrl" :"http://www.joshuachristopher.com",
+    "repoUrl" : null
+},
+{
+    "projectName": "Hacks For Life",
+    "imageUrl": "./assets/images/projects/LH.png",
+    "applicationType" : "Full Stack",
+    "technologies" : ["HTML", "JavaScript", "Ruby", "Ruby on Rails"],
+    "features": ["Server side rendering", "Rails REST API", "Javascript powered Front End"],
+    "liveUrl" :"https://hacks-for-life.herokuapp.com/hacks",
+    "repoUrl" : "https://github.com/chris-baird/life_hacks"
+}]

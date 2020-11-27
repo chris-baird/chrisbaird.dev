@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row } from "reactstrap";
 import Project from "../componets/Project";
+import PROJECTDATA from "../helpers/projects.json";
 
 export default function Projects() {
   return (
@@ -8,12 +9,9 @@ export default function Projects() {
       <Container>
         <h2 className="pt-5 text-center pb-3">Things I Made</h2>
         <Row>
-          <Project />
-          <Project />
-          <Project />
-          <Project />
-          <Project />
-          <Project />
+          {PROJECTDATA.map((project) => (
+            <Project {...project} />
+          ))}
         </Row>
       </Container>
     </section>

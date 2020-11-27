@@ -9,8 +9,9 @@ export default function About() {
         <Row className="mt-5">
           <Col xs="12" sm="12" md="6" lg="6" xl="6">
             <img
-              src="https://via.placeholder.com/350x500"
+              src="./assets/images/misc/me.jpg"
               alt="Placeholder of me"
+              className="img-fluid"
             />
           </Col>
           <Col xs="12" sm="12" md="6" lg="6" xl="6">
