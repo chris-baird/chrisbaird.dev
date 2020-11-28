@@ -14,7 +14,7 @@ export default function Contact() {
   const user = useContext(UserContext);
 
   return (
-    <section className="mb-5">
+    <section className="mb-5" id="contact">
       <Container className="pt-5">
         <h2 className="text-center mb-5">Send Me A Message</h2>
         {user.email ? (

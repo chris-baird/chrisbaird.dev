@@ -6,7 +6,7 @@ import workPlaces from "../helpers/work.json";
 export default function Work() {
   return (
     <section>
-      <Container className="mt-5 mb-5">
+      <Container className="mt-5 mb-5" id="work">
         <h2 className="mb-5 text-center">Places I Have Worked</h2>
         <Row>
           {workPlaces.map((workplace) => (

@@ -5,7 +5,7 @@ import PROJECTDATA from "../helpers/projects.json";
 
 export default function Projects() {
   return (
-    <section>
+    <section id="portfolio">
       <Container>
         <h2 className="pt-5 text-center pb-3">Things I Made</h2>
         <Row>

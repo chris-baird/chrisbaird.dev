@@ -24,7 +24,10 @@ const NavBar = ({ setUser }) => {
 
   const [modal, setModal] = useState(false);
 
-  const toggleModal = () => setModal(!modal);
+  const toggleModal = () => {
+    setIsOpen(false);
+    setModal(!modal);
+  };
 
   return (
     <div>
@@ -36,31 +39,34 @@ const NavBar = ({ setUser }) => {
           >
             CB
           </NavbarBrand>
-          <NavbarToggler onClick={toggle} />
+          <NavbarToggler onClick={toggle} className="border-light" />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem className="ml-auto">
-                <NavLink className="text-white" href="/components/">
+                <NavLink className="text-white" href="#about" onClick={toggle}>
                   About
                 </NavLink>
               </NavItem>
               <NavItem className="ml-auto">
-                <NavLink className="text-white" href="/components/">
+                <NavLink
+                  className="text-white"
+                  href="#portfolio"
+                  onClick={toggle}
+                >
                   Portfolio
                 </NavLink>
               </NavItem>
               <NavItem className="ml-auto">
-                <NavLink className="text-white" href="/components/">
+                <NavLink className="text-white" href="#work" onClick={toggle}>
                   Work Experience
                 </NavLink>
               </NavItem>
               <NavItem className="ml-auto">
-                <NavLink className="text-white" href="/components/">
-                  Developer Commitment
-                </NavLink>
-              </NavItem>
-              <NavItem className="ml-auto">
-                <NavLink className="text-white" href="/components/">
+                <NavLink
+                  className="text-white"
+                  href="#contact"
+                  onClick={toggle}
+                >
                   Contact
                 </NavLink>
               </NavItem>
@@ -77,7 +83,10 @@ const NavBar = ({ setUser }) => {
                   <NavLink
                     className="text-white"
                     href="#"
-                    onClick={() => setUser({ email: null, password: null })}
+                    onClick={() => {
+                      setIsOpen(false);
+                      setUser({ email: null, password: null });
+                    }}
                   >
                     Logout
                   </NavLink>

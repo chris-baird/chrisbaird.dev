@@ -3,7 +3,7 @@ import { Container } from "reactstrap";
 
 export default function Commitment() {
   return (
-    <section className="bg-light pt-5">
+    <section className="bg-light pt-5 pb-5">
       <Container>
         <h2 className="text-center mb-5">My Developer Commitment</h2>
         <p className="lead">
@@ -15,7 +15,9 @@ export default function Commitment() {
           risus. Donec pellentesque, dui ac sodales mollis, est ante cursus ex,
           et fringilla felis purus sit amet ipsum.
         </p>
-        <span>Chris Baird</span>
+        <span>
+          -<em>Chris Baird</em>
+        </span>
       </Container>
     </section>
   );

@@ -29,12 +29,16 @@ export default function Landing() {
               approach to solving problems. Proficient in learning new
               technologies and implementing solutions.
             </p>
-            <Button color="danger" className="mr-2">
-              View My Work
-            </Button>
-            <Button color="success" className="mr-2">
-              Contact Me
-            </Button>
+            <a href="#portfolio">
+              <Button color="danger" className="mr-2">
+                View My Work
+              </Button>
+            </a>
+            <a href="#contact">
+              <Button color="success" className="mr-2">
+                Contact Me
+              </Button>
+            </a>
           </Col>
         </Row>
       </Container>
