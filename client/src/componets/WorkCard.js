@@ -10,7 +10,7 @@ export default function WorkCard({ imageUrl, companyName, position, points }) {
         <p className="text-muted">{position}</p>
         <ul>
           {points.map((point) => (
-            <li>{point}</li>
+            <li key={point}>{point}</li>
           ))}
         </ul>
       </section>

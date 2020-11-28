@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import TechnologyCard from "../componets/TechnologyCard";
 import TechnologyForm from "../componets/TechnologyForm";
 import {
@@ -10,6 +10,7 @@ import {
   Row,
 } from "reactstrap";
 import { getTechnologies } from "../helpers/api";
+import UserContext from "../contexts/UserContext";
 
 export default function Technologies() {
   const [technologies, setTechnologies] = useState([]);
@@ -18,6 +19,7 @@ export default function Technologies() {
 
   const toggle = () => setModal(!modal);
 
+  const user = useContext(UserContext);
   const handleSetTechnologies = (newTechnology) => {
     const technologiesArray = [...technologies, newTechnology];
     return setTechnologies(technologiesArray);
@@ -44,13 +46,16 @@ export default function Technologies() {
       <Container>
         <h2 className="mt-5 mb-5 pt-5 text-center">Technologies I Know</h2>
         <div>
-          <Button
-            className="d-block mx-auto mb-3"
-            color="danger"
-            onClick={toggle}
-          >
-            Add A New Technology
-          </Button>
+          {user.email ? (
+            <Button
+              className="d-block mx-auto mb-3"
+              color="danger"
+              onClick={toggle}
+            >
+              Add A New Technology
+            </Button>
+          ) : null}
+
           <Modal isOpen={modal} toggle={toggle} className="">
             <ModalHeader className="font-weight-bolder" toggle={toggle}>
               Add A New Technology

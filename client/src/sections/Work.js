@@ -11,6 +11,7 @@ export default function Work() {
         <Row>
           {workPlaces.map((workplace) => (
             <WorkCard
+              key={workplace.companyName}
               imageUrl={workplace.imageUrl}
               companyName={workplace.companyName}
               position={workplace.position}

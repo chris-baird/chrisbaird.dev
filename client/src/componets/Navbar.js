@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import {
-  Button,
   Collapse,
   Container,
   Modal,
   ModalBody,
   ModalHeader,
-  ModalFooter,
   Navbar,
   NavbarToggler,
   NavbarBrand,
@@ -15,8 +13,11 @@ import {
   NavLink,
 } from "reactstrap";
 import LoginForm from "./LoginForm";
+import UserContext from "../contexts/UserContext";
 
-const Example = (props) => {
+const NavBar = ({ setUser }) => {
+  const user = useContext(UserContext);
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -64,9 +65,23 @@ const Example = (props) => {
                 </NavLink>
               </NavItem>
               <NavItem className="ml-auto">
-                <NavLink className="text-white" href="#" onClick={toggleModal}>
-                  Login
-                </NavLink>
+                {!user.email ? (
+                  <NavLink
+                    className="text-white"
+                    href="#"
+                    onClick={toggleModal}
+                  >
+                    Login
+                  </NavLink>
+                ) : (
+                  <NavLink
+                    className="text-white"
+                    href="#"
+                    onClick={() => setUser({ email: null, password: null })}
+                  >
+                    Logout
+                  </NavLink>
+                )}
               </NavItem>
             </Nav>
           </Collapse>
@@ -75,11 +90,11 @@ const Example = (props) => {
       <Modal isOpen={modal} toggle={toggleModal}>
         <ModalHeader toggle={toggleModal}>Admin Login</ModalHeader>
         <ModalBody>
-          <LoginForm />
+          <LoginForm setUser={setUser} toggleModal={toggleModal} />
         </ModalBody>
       </Modal>
     </div>
   );
 };
 
-export default Example;
+export default NavBar;

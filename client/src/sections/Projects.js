@@ -10,7 +10,7 @@ export default function Projects() {
         <h2 className="pt-5 text-center pb-3">Things I Made</h2>
         <Row>
           {PROJECTDATA.map((project) => (
-            <Project {...project} />
+            <Project key={project.projectName} {...project} />
           ))}
         </Row>
       </Container>

@@ -38,7 +38,7 @@ export default function Project({
             Technologies Used:
           </CardSubtitle>
           {technologies.map((technology) => (
-            <Badge className="mr-1" color="primary" pill>
+            <Badge key={technology} className="mr-1" color="primary" pill>
               {technology}
             </Badge>
           ))}
@@ -47,7 +47,7 @@ export default function Project({
           </CardSubtitle>
           <ul>
             {features.map((feature) => (
-              <li>{feature}</li>
+              <li key={feature}>{feature}</li>
             ))}
           </ul>
 
