@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "jest",
-    "start": "concurrently \"cd ../client && npm run start\" \"nodemon server.js\""
+    "start": "concurrently \"cd ../client && npm run start\" \"nodemon server.js\"",
+    "build": "concurrently \"cd ../client && npm run build\" \"nodemon server.js\""
   },
   "jest": {
     "testEnvironment": "node"
