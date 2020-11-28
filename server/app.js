@@ -13,7 +13,9 @@ const routes = require("./routes");
 morgan(":method :url :status :res[content-length] - :response-time ms");
 
 // Mongoose connection string
-mongoose.connect("mongodb://127.0.0.1:27017/passport-jwt");
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/passport-jwt"
+);
 // Mongoose error handler
 mongoose.connection.on("error", (error) => console.log(error));
 // Mongoose promise configuration
