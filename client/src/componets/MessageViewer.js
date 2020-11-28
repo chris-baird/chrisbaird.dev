@@ -11,7 +11,7 @@ export default function MessageViewer() {
   const user = useContext(UserContext);
   const handleDeleteMessageById = async (id) => {
     try {
-      const deletedMessage = await deleteDatabaseMessageById(id);
+      const deletedMessage = await deleteDatabaseMessageById(id, user.token);
       const newMessagesArray = messages.filter(
         (message) => message._id !== deletedMessage._id
       );

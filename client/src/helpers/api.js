@@ -16,11 +16,14 @@ export const getMessages = async (token) => {
     throw error;
   }
 };
-export const deleteDatabaseMessageById = async (id) => {
+export const deleteDatabaseMessageById = async (id, token) => {
   try {
-    const response = await fetch("/api/messages/" + id, {
-      method: "DELETE",
-    });
+    const response = await fetch(
+      "/api/messages/" + id + "/?secret_token=" + token,
+      {
+        method: "DELETE",
+      }
+    );
     const deletedMessage = await response.json();
     return deletedMessage;
   } catch (error) {
