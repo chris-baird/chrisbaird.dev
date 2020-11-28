@@ -17,7 +17,9 @@ mongoose.connect(
   process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/passport-jwt"
 );
 // Mongoose error handler
-mongoose.connection.on("error", (error) => console.log(error));
+mongoose.connection.on("error", (error) => {
+  throw error;
+});
 // Mongoose promise configuration
 mongoose.Promise = global.Promise;
 
