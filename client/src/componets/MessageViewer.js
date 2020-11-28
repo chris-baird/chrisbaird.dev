@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import MessageList from "./MessageList";
 import MessageView from "./MessageView";
 import { getMessages } from "../helpers/api";
 import { Col, Container, Row } from "reactstrap";
 import { deleteDatabaseMessageById } from "../helpers/api";
+import UserContext from "../contexts/UserContext";
 export default function MessageViewer() {
   const [messages, setMessages] = useState(null);
   const [selectedMessage, setSelectedMessage] = useState(null);
-
+  const user = useContext(UserContext);
   const handleDeleteMessageById = async (id) => {
     try {
       const deletedMessage = await deleteDatabaseMessageById(id);
@@ -25,7 +26,7 @@ export default function MessageViewer() {
     async function getMessageData() {
       if (!messages) {
         try {
-          const messageData = await getMessages();
+          const messageData = await getMessages(user.token);
           return setMessages(messageData);
         } catch (error) {
           throw error;
@@ -33,7 +34,7 @@ export default function MessageViewer() {
       }
     }
     getMessageData();
-  }, [messages, selectedMessage]);
+  }, [messages, selectedMessage, user.token]);
 
   return (
     <Container>

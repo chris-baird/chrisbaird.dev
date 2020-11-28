@@ -31,7 +31,7 @@ export default function LoginForm({ setUser, toggleModal }) {
           // Checking if log in was a success
           if (userToken !== null) {
             toggleModal();
-            return setUser({ email: values.email, token: userToken });
+            return setUser({ email: values.email, token: userToken.token });
           }
           // Setting error message if failure
           return setErrorMessage(true);
@@ -45,7 +45,7 @@ export default function LoginForm({ setUser, toggleModal }) {
           <Alert isOpen={errorMessage} color="danger">
             Invalid Email or Password
           </Alert>
-          <FormGroup on>
+          <FormGroup>
             <Label>Email:</Label>
             <Input name="email" value={values.email} onChange={handleChange} />
             <ErrorMessage name="email" className="text-danger">

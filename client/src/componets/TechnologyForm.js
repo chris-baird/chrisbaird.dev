@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Formik, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { Button, Form, FormGroup, Input, Label } from "reactstrap";
+import UserContext from "../contexts/UserContext";
 
 export default function TechnologyForm({ handleSetTechnologies }) {
   // Maxium allowed file size calculation
@@ -14,6 +15,8 @@ export default function TechnologyForm({ handleSetTechnologies }) {
     "image/png",
   ];
 
+  const user = useContext(UserContext);
+
   // Formats form data into multipart/form-data object
   const handleFormatFormData = (formData) => {
     let formatedFormData = new FormData();
@@ -24,11 +27,13 @@ export default function TechnologyForm({ handleSetTechnologies }) {
   // Posts new technology to web api and returns a database object copy
   const handleTechnologyPost = async (formatedFormData) => {
     try {
-      const res = await fetch("/api/technologies", {
+      console.log(user);
+      const res = await fetch("/api/technologies/?secret_token=" + user.token, {
         method: "POST",
         body: formatedFormData,
       });
       const newTechnology = await res.json();
+      console.log(newTechnology);
       return newTechnology;
     } catch (error) {
       throw error;

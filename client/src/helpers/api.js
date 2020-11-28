@@ -7,9 +7,9 @@ export const getTechnologies = async () => {
     throw error;
   }
 };
-export const getMessages = async () => {
+export const getMessages = async (token) => {
   try {
-    const response = await fetch("/api/messages");
+    const response = await fetch("/api/messages/?secret_token=" + token);
     const messages = await response.json();
     return messages;
   } catch (error) {

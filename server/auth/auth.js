@@ -1,6 +1,7 @@
 const passport = require("passport");
 const localStrategy = require("passport-local").Strategy;
 const UserModel = require("../models/user");
+const { lock } = require("../routes/api-routes/technologyRoutes");
 const JWTstrategy = require("passport-jwt").Strategy;
 //Used to extract the JWT sent by the user
 const ExtractJWT = require("passport-jwt").ExtractJwt;
@@ -19,6 +20,7 @@ passport.use(
         //Pass the user details to the next middleware
         return done(null, token.user);
       } catch (error) {
+        console.log(error);
         done(error);
       }
     }
