@@ -14,6 +14,7 @@ module.exports = {
       });
     } catch (error) {
       console.log(error);
+      res.json(error);
     }
   },
   login: async (req, res, next) => {
