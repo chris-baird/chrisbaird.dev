@@ -3,6 +3,6 @@
         "start-dev": "cd server/ && npm start",
         "start": "cd server/ && npm install && node server.js",
         "build": "cd client/ && npm install && npm run build",
-        "heroku-postbuild": "cd server/ && node server.js"
+        "heroku-postbuild": "cd server/ && npm install && node server.js"
       }
 }
