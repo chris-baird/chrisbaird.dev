@@ -41,7 +41,7 @@ export default function Contact() {
             lg="8"
             lx="8"
           >
-            <h4 className="text-center mb-5">Send Me A Message</h4>
+            <p className="text-center mb-5 text-muted">Send Me A Message</p>
             <EmailForm />
           </Col>
           <Col
@@ -51,10 +51,10 @@ export default function Contact() {
             lg="4"
             lx="4"
           >
-            <h4 className="text-center mb-5">Follow Me On</h4>
+            <p className="text-center mb-5 text-muted">Follow Me On</p>
 
-            <Row>
-              <Col md="12">
+            <Row className="mb-5">
+              <Col md="6">
                 <a href="https://github.com/chris-baird" target="blank">
                   <img
                     className="img-fluid"
@@ -63,7 +63,7 @@ export default function Contact() {
                   ></img>
                 </a>
               </Col>
-              <Col md="12">
+              <Col md="6">
                 <a
                   href="https://www.linkedin.com/in/c-baird/"
                   target="blank"

@@ -11,7 +11,7 @@ export default function Commitment() {
           <Col xs="12" sm="12" md="4" lg="4" xl="4">
             <img
               src="./assets/images/misc/COMMITMENTIMAGE.png"
-              className="img-fluid w-50 d-block mx-auto"
+              className="img-fluid w-50 d-block mx-auto mb-3"
               alt="Check box is marked"
             />
           </Col>

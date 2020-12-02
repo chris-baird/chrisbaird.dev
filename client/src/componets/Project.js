@@ -23,7 +23,7 @@ export default function Project({
   return (
     <Col className="mt-3" xs="12" sm="12" md="6" lg="4" xl="3">
       <Card className="shadow border-0">
-        <CardTitle className="m-2 font-weight-bold" tag="h4">
+        <CardTitle className="m-2 font-weight-bold text-center" tag="h4">
           {projectName}
         </CardTitle>
         <CardImg top width="100%" src={imageUrl} alt="Card image cap" />
