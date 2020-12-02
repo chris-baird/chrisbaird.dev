@@ -1,23 +1,32 @@
 import React from "react";
-import { Container } from "reactstrap";
+import { Col, Container, Row } from "reactstrap";
 
 export default function Commitment() {
   return (
     <section className="bg-light pt-5 pb-5">
       <Container>
         <h2 className="text-center mb-5">My Developer Commitment</h2>
-        <p className="lead">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in
-          augue eget ipsum imperdiet condimentum. Quisque consequat id quam sit
-          amet fermentum. Mauris mattis lacinia nibh in vestibulum. In placerat
-          pretium mattis. Integer vel sapien eu neque pretium tempus. Nunc vitae
-          sapien justo. Donec vitae nisl accumsan, lobortis felis vitae, porta
-          risus. Donec pellentesque, dui ac sodales mollis, est ante cursus ex,
-          et fringilla felis purus sit amet ipsum.
-        </p>
-        <span>
-          -<em>Chris Baird</em>
-        </span>
+
+        <Row>
+          <Col xs="12" sm="12" md="4" lg="4" xl="4">
+            <img
+              src="./assets/images/misc/COMMITMENTIMAGE.png"
+              className="img-fluid w-50 d-block mx-auto"
+              alt="Check box is marked"
+            />
+          </Col>
+          <Col xs="12" sm="12" md="8" lg="8" xl="8">
+            <p className="lead">
+              Whether In-House developer, Freelance Developer, or Developer
+              Tutor, my commitment is to professional work ethics, treating all
+              I encounter with the utmost respect and making a better internet
+              one application at a time.
+            </p>
+            <span>
+              -<em>Chris Baird</em>
+            </span>
+          </Col>
+        </Row>
       </Container>
     </section>
   );
