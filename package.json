@@ -2,6 +2,7 @@
     "scripts": {
         "start-dev": "cd server/ && npm start",
         "start": "cd server/ && npm install && node server.js",
+        "test" : "cd server/ && npm test && (cd ../client && npm test)",
         "build": "cd client/ && npm install && npm run build"
       }
 }
