@@ -1,6 +1,8 @@
-const router = require("express").Router();
-const apiRoutes = require("./api-routes");
-const htmlRoutes = require("./html-routes");
+import express from "express"
+const router = express.Router()
+
+import apiRoutes from "./api-routes/index.js"
+// const htmlRoutes = require("./html-routes");
 
 // Public routes
 // router.use("/", htmlRoutes);
@@ -8,4 +10,4 @@ const htmlRoutes = require("./html-routes");
 //Privates routes with auth middleware
 router.use("/api", apiRoutes);
 
-module.exports = router;
+export default router;

@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose"
 const Schema = mongoose.Schema;
 
 const TechnologySchema = new Schema({
@@ -14,4 +14,4 @@ const TechnologySchema = new Schema({
 
 const TechnologyModel = mongoose.model("technology", TechnologySchema);
 
-module.exports = TechnologyModel;
+export default TechnologyModel;

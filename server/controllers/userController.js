@@ -1,8 +1,8 @@
-const passport = require("passport");
-const jwt = require("jsonwebtoken");
-const UserModel = require("../models/user");
+import passport from "passport"
+import jwt from "jsonwebtoken"
+import UserModel from "../models/user.js"
 
-module.exports = {
+export default {
   signUp: async (req, res) => {
     try {
       const user = await UserModel.findByIdAndUpdate(req.user.id, {

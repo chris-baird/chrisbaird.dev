@@ -1,5 +1,5 @@
-const EmailModel = require("../models/email");
-module.exports = {
+import EmailModel from "../models/email.js"
+export default {
   getEmails: async (req, res) => {
     try {
       const dbEmail = await EmailModel.find();

@@ -1,9 +1,10 @@
-const router = require("express").Router();
-const userRoutes = require("./userRoutes");
-const technologyRoutes = require("./technologyRoutes");
-const emailRoutes = require("./emailRoutes");
+import express from "express"
+const router = express.Router()
+import userRoutes from "./userRoutes.js"
+import technologyRoutes from "./technologyRoutes.js"
+import emailRoutes from "./emailRoutes.js"
 router.use("/user", userRoutes);
 router.use("/technologies", technologyRoutes);
 router.use("/messages", emailRoutes);
 
-module.exports = router;
+export default router

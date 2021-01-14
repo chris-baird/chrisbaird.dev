@@ -1,7 +1,7 @@
-const express = require("express");
-const userController = require("../../controllers/userController");
-const passport = require("passport");
-const jwt = require("jsonwebtoken");
+import express from "express"
+import userController from "../../controllers/userController.js"
+import passport from "passport"
+import jwt from "jsonwebtoken"
 
 const router = express.Router();
 
@@ -13,4 +13,4 @@ router.post(
 
 router.post("/login", userController.login);
 
-module.exports = router;
+export default router

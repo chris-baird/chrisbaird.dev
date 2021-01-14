@@ -1,7 +1,8 @@
-const router = require("express").Router();
-const passport = require("passport");
-const technologyController = require("../../controllers/technologyController");
-const uploadHandler = require("../../middleware/multer-google-storage");
+import express from "express"
+import passport from "passport"
+import technologyController from "../../controllers/technologyController.js"
+import uploadHandler from "../../middleware/multer-google-storage.js"
+const router = express.Router()
 router.get("/", technologyController.getTechnologies);
 router.post(
   "/",
@@ -9,4 +10,4 @@ router.post(
   uploadHandler.any(),
   technologyController.createTechnology
 );
-module.exports = router;
+export default router;

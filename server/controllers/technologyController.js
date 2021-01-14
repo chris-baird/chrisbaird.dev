@@ -1,5 +1,5 @@
-const TechnologyModel = require("../models/technology");
-module.exports = {
+import TechnologyModel from "../models/technology.js"
+export default {
   getTechnologies: async (req, res) => {
     try {
       const dbTechnologies = await TechnologyModel.find();

@@ -1,10 +1,13 @@
-const passport = require("passport");
-const localStrategy = require("passport-local").Strategy;
-const UserModel = require("../models/user");
-const { lock } = require("../routes/api-routes/technologyRoutes");
-const JWTstrategy = require("passport-jwt").Strategy;
+import passport from "passport"
+import localStrategy from "passport-local"
+localStrategy.Strategy;
+import  UserModel from "../models/user.js"
+import passportJWT from "passport-jwt"
+
+const JWTstrategy = passportJWT.Strategy
 //Used to extract the JWT sent by the user
-const ExtractJWT = require("passport-jwt").ExtractJwt;
+// import ExtractJWT from "passport-jwt"
+const ExtractJWT = passportJWT.ExtractJwt
 
 //This verifies that the token sent by the user is valid
 passport.use(

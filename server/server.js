@@ -1,4 +1,4 @@
-const app = require('./app');
+import app from './app.js'
 
 // Starting server on given port
 app.listen(process.env.PORT || 3001, () => {

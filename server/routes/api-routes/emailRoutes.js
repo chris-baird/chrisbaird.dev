@@ -1,7 +1,8 @@
-const router = require("express").Router();
-const passport = require("passport");
+import express from "express"
+import passport from "passport"
+import emailController from "../../controllers/emailController.js"
+const router = express.Router()
 
-const emailController = require("../../controllers/emailController");
 router.get(
   "/",
   passport.authenticate("jwt", { session: false }),
@@ -13,4 +14,4 @@ router.delete(
   passport.authenticate("jwt", { session: false }),
   emailController.deleteEmailById
 );
-module.exports = router;
+export default router;
