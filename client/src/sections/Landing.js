@@ -22,7 +22,7 @@ export default function Landing() {
           >
             <h1 className="font-weight-bolder">Chris Baird</h1>
             <h2 className="mt-2 mb-2">Full Stack Web Developer</h2>
-            <p className="lead font-weight-light">
+            <p className="lead">
               Motivated developer with experience creating custom web
               applications through Javascript and React. Strong collaboration
               skills and proven history of application development. Methodical
@@ -30,7 +30,7 @@ export default function Landing() {
               technologies and implementing solutions.
             </p>
             <a href="#portfolio">
-              <Button color="danger" className="mr-2">
+              <Button color="info" className="mr-2">
                 View My Work
               </Button>
             </a>

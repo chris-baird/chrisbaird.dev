@@ -39,7 +39,7 @@ const NavBar = ({ setUser }) => {
           >
             CB
           </NavbarBrand>
-          <NavbarToggler onClick={toggle} className="border-light" />
+          <NavbarToggler onClick={toggle} className="border-light p-3" />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem className="ml-auto">
