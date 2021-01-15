@@ -5,6 +5,7 @@ import morgan from "morgan"
 import { join } from "path"
 import { dirname } from 'path'
 import { fileURLToPath } from 'url'
+import generateBucketKey from './helpers/generateBucketKey.js'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
@@ -12,6 +13,9 @@ const app = express()
 
 // Loading dotenv file
 import "dotenv/config.js"
+
+// Writes buckey key file from env 
+generateBucketKey()
 
 // Pulling in routes
 import routes from "./routes/index.js"
@@ -28,7 +32,7 @@ mongoose.connection.on("error", (error) => {
   throw error;
 });
 // Mongoose promise configuration
-mongoose.Promise = global.Promise;
+mongoose.Promise = global.Promise
 
 // Loading auth middleware
 import "./auth/auth.js"
@@ -40,7 +44,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static(join(__dirname, "../client/build")))
 
 // Routes configuration
-app.use(routes);
+app.use(routes)
 
 //Handle errors
 app.use(function (err, req, res, next) {
