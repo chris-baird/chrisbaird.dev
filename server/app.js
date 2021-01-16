@@ -13,9 +13,6 @@ const app = express()
 // Loading dotenv file
 import "dotenv/config.js"
 
-// Writes buckey key file from env
-generateBucketKey()
-
 // Pulling in routes
 import routes from "./routes/index.js"
 
