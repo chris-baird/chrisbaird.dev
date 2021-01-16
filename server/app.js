@@ -3,9 +3,8 @@ import mongoose from "mongoose"
 import bodyParser from "body-parser"
 import morgan from "morgan"
 import { join } from "path"
-import { dirname } from 'path'
-import { fileURLToPath } from 'url'
-import generateBucketKey from './helpers/generateBucketKey.js'
+import { dirname } from "path"
+import { fileURLToPath } from "url"
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
@@ -14,7 +13,7 @@ const app = express()
 // Loading dotenv file
 import "dotenv/config.js"
 
-// Writes buckey key file from env 
+// Writes buckey key file from env
 generateBucketKey()
 
 // Pulling in routes
@@ -29,8 +28,8 @@ mongoose.connect(
 )
 // Mongoose error handler
 mongoose.connection.on("error", (error) => {
-  throw error;
-});
+  throw error
+})
 // Mongoose promise configuration
 mongoose.Promise = global.Promise
 
