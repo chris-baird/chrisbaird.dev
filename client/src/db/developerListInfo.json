@@ -1,0 +1,38 @@
+[
+    {
+        "title": "HARDWARE",
+        "list": [
+            "CPU: AMD Ryzen 5 3600",
+            "RAM: 16gb",
+            "GPU: Radeon Nitro R9 Fury 4GB HBM Nitro",
+            "MONITOR: MSI Optix 34 inch ultrawide monitor",
+            "LAPTOP: MacBook air 2015 13 inch"
+        ]
+    },
+    {
+        "title": "SOFTWARE",
+        "list": [
+            "OPERATING SYSTEM: Ubuntu Cinnamon",
+            "SHELL: : ZSH/Oh My Zsh",
+            "TEXT EDITOR: GNU Nano",
+            "CODE EDITOR: Visual Studio Code"
+        ]
+    },
+    {
+        "title": "INTERESTS",
+        "list": [
+            "ANIMALS: Cats, Dogs, Birds",
+            "TIME WASTER: Learning new technologies",
+            "HOBBY: Lego Technic",
+            "GUILTY PLEASURE: Alien Conspiracies"
+        ]
+    },
+    {
+        "title":"FAVORITE TECHNOLOGIES",
+        "list":["JavaScript","Node", "React", "Docker", "Git"]
+    },
+    {
+        "title": "WORDS TO DESCRIBE ME",
+        "list":["Energetic", "Pragmatic", "Empathic", "Versatile", "Analytical"]
+    }
+]
