@@ -1,4 +1,5 @@
 import React from "react";
+import DeveloperInfo from "./DeveloperInfo";
 import { Row, Col, Container } from "reactstrap";
 
 export default function About() {
@@ -11,7 +12,7 @@ export default function About() {
             <img
               src="./assets/images/misc/me.JPG"
               alt="Placeholder of me"
-              className="img-fluid"
+              className="img-fluid w-75 rounded"
             />
           </Col>
           <Col xs="12" sm="12" md="6" lg="6" xl="6">
@@ -26,6 +27,7 @@ export default function About() {
             </p>
           </Col>
         </Row>
+        <DeveloperInfo />
       </Container>
     </section>
   );
