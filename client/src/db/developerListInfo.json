@@ -1,6 +1,6 @@
 [
     {
-        "title": "HARDWARE",
+        "title": "HARDWARE I USE",
         "listIcon": "hardware.png",
         "list": [
             "CPU: AMD Ryzen 5 3600",
@@ -11,33 +11,33 @@
         ]
     },
     {
-        "title": "SOFTWARE",
+        "title": "SOFTWARE I USE",
         "listIcon": "software.png",
         "list": [
-            "OPERATING SYSTEM: Ubuntu Cinnamon",
-            "SHELL: : ZSH/Oh My Zsh",
+            "OPERATING SYSTEM: Ubuntu/Windows",
+            "SHELL: ZSH/Oh My Zsh",
             "TEXT EDITOR: GNU Nano",
             "CODE EDITOR: Visual Studio Code"
         ]
     },
     {
-        "title": "INTERESTS",
+        "title": "MY INTERESTS",
         "listIcon": "interests.png",
         "list": [
             "ANIMALS: Cats, Dogs, Birds",
-            "TIME WASTER: Learning new technologies",
-            "HOBBY: Lego Technic",
+            "TIME WASTER: Learning new technologies", 
+            "HOBBIES: Lego Technic, STEAM kits",
             "GUILTY PLEASURE: Alien Conspiracies"
         ]
     },
     {
         "title":"FAVORITE TECHNOLOGIES",
         "listIcon": "fav-tech.png",
-        "list":["JavaScript","Node", "React", "Docker", "Git"]
+        "list":["JavaScript","Node", "React", "Docker", "Git", "Linux"]
     },
     {
         "title": "WORDS TO DESCRIBE ME",
         "listIcon": "words.png",
-        "list":["Energetic", "Pragmatic", "Empathic", "Versatile", "Analytical"]
+        "list":["Energetic", "Pragmatic", "Empathic", "Versatile", "Analytical", "Human"]
     }
 ]

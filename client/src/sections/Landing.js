@@ -2,12 +2,13 @@ import React from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 export default function Landing() {
   return (
-    <section
+    <section className="landing-section"
       style={{
-        backgroundImage: "url(./landing-bg.png)",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
+        
+        // backgroundImage: "url(./landing-bg.png)",
+        // backgroundRepeat: "no-repeat",
+        // backgroundSize: "cover",
+        // backgroundPosition: "center",
       }}
     >
       <Container className="pt-5 pb-5">
@@ -16,7 +17,7 @@ export default function Landing() {
             className="text-white"
             xs="12"
             sm="12"
-            md={{ size: 8, offset: 5 }}
+            md={{ size: 8, offset: 4 }}
             lg="8"
             xl="8"
           >
@@ -30,12 +31,12 @@ export default function Landing() {
               technologies and implementing solutions.
             </p>
             <a href="#portfolio">
-              <Button color="info" className="mr-2">
+              <Button color="light" className="mr-2">
                 View My Work
               </Button>
             </a>
             <a href="#contact">
-              <Button color="success" className="mr-2">
+              <Button color="dark" className="mr-2">
                 Contact Me
               </Button>
             </a>

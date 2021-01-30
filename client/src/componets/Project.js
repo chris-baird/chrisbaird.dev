@@ -21,7 +21,7 @@ export default function Project({
   repoUrl,
 }) {
   return (
-    <Col className="mt-3" xs="12" sm="12" md="6" lg="4" xl="3">
+    <Col className="mt-3" xs="12" sm="12" md="6" lg="4" xl="4">
       <Card className="shadow border-0">
         <CardTitle className="m-2 font-weight-bold text-center" tag="h4">
           {projectName}

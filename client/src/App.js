@@ -9,6 +9,7 @@ import Commitment from "./sections/Commitment";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import UserContext from "./contexts/UserContext";
+import DeveloperInfo from "./sections/DeveloperInfo"
 function App() {
   const [user, setUser] = useState({ email: null, token: null });
 
@@ -19,6 +20,7 @@ function App() {
         <Navbar setUser={setUser} />
         <Landing />
         <About />
+        <DeveloperInfo />
         <Projects />
         <Technologies />
         <Work />

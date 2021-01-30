@@ -27,7 +27,6 @@ export default function About() {
             </p>
           </Col>
         </Row>
-        <DeveloperInfo />
       </Container>
     </section>
   );
