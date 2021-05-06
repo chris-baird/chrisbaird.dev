@@ -1,13 +1,13 @@
-import React from "react";
-import { Col, Container, Row } from "reactstrap";
-import Project from "../componets/Project";
-import PROJECTDATA from "../helpers/projects.json";
+import React from "react"
+import { Col, Container, Row } from "reactstrap"
+import Project from "../componets/Project"
+import PROJECTDATA from "../helpers/projects.json"
 
 export default function Projects() {
   return (
     <section id="portfolio">
       <Container>
-        <Row className="p-5">
+        <Row>
           <Col xs="12">
             <h2 className="pt-5 text-center pb-3">Things I Made</h2>
           </Col>
@@ -18,5 +18,5 @@ export default function Projects() {
         </Row>
       </Container>
     </section>
-  );
+  )
 }
