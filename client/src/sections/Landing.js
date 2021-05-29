@@ -1,15 +1,17 @@
-import React from "react";
-import { Container, Row, Col, Button } from "reactstrap";
+import React from "react"
+import { Container, Row, Col, Button } from "reactstrap"
 export default function Landing() {
   return (
-    <section className="landing-section"
-      style={{
-        
-        // backgroundImage: "url(./landing-bg.png)",
-        // backgroundRepeat: "no-repeat",
-        // backgroundSize: "cover",
-        // backgroundPosition: "center",
-      }}
+    <section
+      className="landing-section"
+      style={
+        {
+          // backgroundImage: "url(./landing-bg.png)",
+          // backgroundRepeat: "no-repeat",
+          // backgroundSize: "cover",
+          // backgroundPosition: "center",
+        }
+      }
     >
       <Container className="pt-5 pb-5">
         <Row className="mb-5 mt-5">
@@ -24,11 +26,11 @@ export default function Landing() {
             <h1 className="font-weight-bolder">Chris Baird</h1>
             <h2 className="mt-2 mb-2">Full Stack Web Developer</h2>
             <p className="lead">
-              Motivated developer with experience creating custom web
-              applications through Javascript and React. Strong collaboration
-              skills and proven history of application development. Methodical
-              approach to solving problems. Proficient in learning new
-              technologies and implementing solutions.
+              Practical problem-solver with over three years of experience
+              working with the JavaScript programming language. Uses a hands-on
+              reverse engineering approach to learning and breaking down complex
+              problems. Seeking new learning opportunities, a team to grow with
+              and new software to build.
             </p>
             <a href="#portfolio">
               <Button color="light" className="mr-2">
@@ -44,5 +46,5 @@ export default function Landing() {
         </Row>
       </Container>
     </section>
-  );
+  )
 }
