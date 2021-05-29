@@ -10,7 +10,7 @@ export default function About() {
           <Col xs="12" sm="12" md="6" lg="6" xl="6">
             <h2 className="text-center mb-5">Hello, I'm Chris Baird</h2>
             <img
-              src="./assets/images/misc/me.png"
+              src="./assets/images/misc/ME.png"
               alt="Placeholder of me"
               className="img-fluid rounded d-block mx-auto mb-5"
             />
