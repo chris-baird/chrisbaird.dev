@@ -1,4 +1,4 @@
-const isAuthenticated = require('../middleware/isAuthenticated');
+import isAuthenticated from '../middleware/isAuthenticated.js';
 describe('Auth Middleware Tests', () => {
     it('calls next function if there is a user', () => {
         // Test user
