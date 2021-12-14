@@ -1,3 +1,5 @@
+import dotenv from 'dotenv'
+dotenv.config()
 import multer from "multer"
 import multerGoogleStorage from "multer-google-storage"
 const uploadHandler = multer({

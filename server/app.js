@@ -10,9 +10,6 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 
 const app = express()
 
-// Loading dotenv file
-import "dotenv/config.js"
-
 // Pulling in routes
 import routes from "./routes/index.js"
 
