@@ -33,48 +33,15 @@
         "repoUrl": null
     },
     {
-        "projectName": "Jones Baseball Academy",
-        "imageUrl": "./assets/images/projects/jbaSS.png",
-        "applicationType": "Front End",
-        "technologies": [
-            "HTML5",
-            "CSS3",
-            "JavaScript"
-        ],
-        "features": [
-            "Custom Styling",
-            "Call To Action Link",
-            "Single Page App"
-        ],
-        "liveUrl": "http://www.jonesbaseballacademy.com",
-        "repoUrl": null
-    },
-    {
-        "projectName": "The SAE2020",
-        "imageUrl": "./assets/images/projects/THESAE2020.jpg.png",
-        "applicationType": "Front End",
-        "technologies": [
-            "HTML5",
-            "CSS3",
-            "JavaScript"
-        ],
-        "features": [
-            "Custom Styling, Responsive design",
-            "Streaming system with on demand download"
-        ],
-        "liveUrl": "http://www.thesae2020.com",
-        "repoUrl": null
-    },
-    {
         "projectName": "Joshua Christopher Full Service Salon Spa",
         "imageUrl": "./assets/images/projects/JCSALON.png",
         "applicationType": "Front End",
         "technologies": [
-            "Angular",
-            "TypeScript"
+            "Wordpress",
+            "PHP"
         ],
         "features": [
-            "Single Page Application powered by Angular",
+            "Custom CSS",
             "Fully Responsive"
         ],
         "liveUrl": "http://www.joshuachristopher.com",
