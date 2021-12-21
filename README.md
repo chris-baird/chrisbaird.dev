@@ -1,21 +1,38 @@
-# chrisbaird.dev
+# Chrisbaird.dev
 
->chrisbaird.dev is a web portfolio built with the MERN stack. Allows the author to dynamically upload new projects, technologies, and the ability to receive messages left by users.
+ 1. [About](#Developer%20Info)
+ 2. [Features](#Developer%20Info)
+ 3. [Client](#Developer%20Info)
+ 4. [Server](#Developer%20Info)
+ 5. [Developer Info](#Developer%20Info)
+
+## About
+Fullstack project using the MERN stack (MongoDB, Express JS, React, Node JS)
 
 ## Features
 
-- User Authentication
-- Image upload functionality
-- Message system
-- Single page client side application
+ - User authentication
+ - Image upload service
+ - Cloud MongoDB Database
+ - Single Page Client Side application
+ - Message Service
 
-## Technologies used
+## Client
 
-- MongoDB with Mongoose ODM
-- Node with Express js
-- React with functional components
+ - Built with React
+ -  Functional components
+ - Use of advance Hooks such as context, useState and useEffect
 
+## Server
+	
 
+ - Built with Express/Node js
+ - User authentication built with PassportJS, JsonWebTokens, and bcrypt
+ - Image upload service build with Multer and multer-google-storage
+ - Using Import/Export module syntax
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+  
+
+## Developer Info
+Portfolio
+[chrisbaird.dev](https://chrisbairddev.herokuapp.com/)
