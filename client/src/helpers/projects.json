@@ -1,5 +1,20 @@
 [
     {
+        "projectName": "Grazioso",
+        "imageUrl": "https://via.placeholder.com/300x150/Gr%20https://placeholder.com/",
+        "applicationType": "Command Line",
+        "technologies": [
+            "Java"
+        ],
+        "features": [
+            "Object oriented programming",
+            "Strongly typed language",
+            "Rigid user input validation"
+        ],
+        "liveUrl": "https://replit.com/@ChrisBaird/Grazioso#Main.java",
+        "repoUrl": "https://github.com/chris-baird/Grazioso"
+    },
+    {
         "projectName": "Alien Fishing Panic",
         "imageUrl": "./assets/images/projects/AlienFishingPanic.png",
         "applicationType": "Command Line",

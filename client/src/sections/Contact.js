@@ -65,14 +65,14 @@ export default function Contact() {
               </Col>
               <Col md="6">
                 <a
-                  href="https://www.linkedin.com/in/c-baird/"
+                  href="https://replit.com/@ChrisBaird"
                   target="blank"
                   className="mt-5"
                 >
                   <img
                     className="img-fluid"
-                    src="/assets/images/social/LINKEDINSOCIALLOGO.png"
-                    alt="LinkedIn social media icon"
+                    src="https://symbols.getvecta.com/stencil_94/65_replit.05b1242be3.svg"
+                    alt="Repl icon"
                   ></img>
                 </a>
               </Col>

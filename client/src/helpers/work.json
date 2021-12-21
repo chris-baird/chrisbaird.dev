@@ -1,4 +1,10 @@
 [{
+    "imageUrl": "./assets/images/work/TrilogyEd.svg",
+    "companyName" : "Trilogy Education Services",
+    "position" : "Senior Tutor/Teaching Assistant",
+    "points" : ["Teaches Full Stack Web Development, including MongoDB, React, Node.", "Over 600 hours of one on one remote tutoring sessions teaching fundamentals and critical concepts of web development."]
+
+},{
     "imageUrl": "./assets/images/work/jba.png",
     "companyName" : "Jones Baseball Academy",
     "position" : "Contract Developer",
@@ -9,7 +15,7 @@
     "imageUrl": "./assets/images/work/JC-Logo-Crop.jpg",
     "companyName" : "Joshaua Christopher Full Service Salon",
     "position" : "Contract Developer",
-    "points" : ["Converted old website to new Angular platform.","Search Engine Optimization","Custom Email Mailer service"]
+    "points" : ["Rebuild a new website from scratch on the Wordpress platform","Coded website with Search Engine Optimization in mind", "WEB API integration with Mind Body Online"]
 
 },
 {
@@ -17,12 +23,4 @@
     "companyName" : "Pacific Coast Entertainment",
     "position" : "Contract Developer",
     "points" : ["Developed a streaming landing page for a virtual graduation ceremony commencement.","Utilized box cast Livestream technology for timed video release."]
-
-},
-{
-    "imageUrl": "./assets/images/work/TrilogyEd.svg",
-    "companyName" : "Trilogy Education Services",
-    "position" : "Senior Tutor/Teaching Assistant",
-    "points" : ["Teaches Full Stack Web Development, including MongoDB, React, Node.", "Over 600 hours of one on one remote tutoring sessions teaching fundamentals and critical concepts of web development."]
-
 }]
