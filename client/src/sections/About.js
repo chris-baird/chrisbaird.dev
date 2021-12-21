@@ -17,37 +17,7 @@ export default function About() {
           </Col>
           <Col xs="12" sm="12" md="6" lg="6" xl="6">
             <p className="lead">
-              I am a Full-Stack Web Developer based out of the Orange County
-              region. I attended General Assemblies web development immersive
-              program. I earned an endorsed certificate upon contributing more
-              than 420 hours in 4 months studying the full-stack JavaScript
-              ecosystem, building web API's and working with advanced frameworks
-              and libraries such as React Express and Angular. Upon graduation,
-              I immediately worked as a freelance web developer creating and
-              executing projects for clients such as a spa salon business owner,
-              a start-up baseball coach, and high school graduation streaming
-              solutions for schools affected by covid. It is here that I learn
-              to manage projects, gather requirements, and utilize the AGILE
-              SCRUM methodology to deliver high-quality software in a small
-              amount of time.
-            </p>
-            <p className="lead">
-              After expanding my experience in the freelance market, I decided
-              to take on a job as a teaching assistant for the coding Bootcamp
-              offered by Trilogy Education. It is here that I discovered to be
-              humble and to learn through teaching. I gained the ability to
-              break down complex problems into smaller chunks that are easier to
-              explain to others. Seeking more challenges, I took up online
-              tutoring to give individual support to students going through
-              coding boot camps. In this role, I strive to provide high-quality
-              education, respect, and emotional support to students facing the
-              challenges of coding boot camps. To date, I have amassed more than
-              670 hours of delivering high-quality individual instruction to
-              students via Zoom sessions. My latest chapter in understanding
-              software development has brought me to Southern New Hampshire
-              University, where I aspire to be the first in my family to obtain
-              a Bachelors degree in Computer Science and gain a deep insight
-              into software architecture.
+              I am a 35-year-old software engineer with four years of professional experience working with JavaScript and the MERN stack (Mongo/MySql, Express, React, Node js). My experience includes working with, teaching, providing code reviews, and one on one tutor sessions with JavaScript and the MERN stack. I am currently looking for a small to medium-sized development team to contribute and produce high-quality self-documented code in the long term. I am an extremely self-sufficient individual that is more than capable of rapidly teaching myself new technologies, with the capability to turn around and instruct others on what I just learned. I am two years into obtaining my bachelor of computer science, where I have completed my Python, Java, C++, and Data Science classes with A's. I am a respectful person, have a high work ethic, and enjoy working with others when needed. 
             </p>
           </Col>
         </Row>
