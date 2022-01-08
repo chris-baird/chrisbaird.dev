@@ -64,7 +64,7 @@
   {
     "projectName": "Hacks For Life",
     "imageUrl": "./assets/images/projects/LH.png",
-    "applicationType": "Server",
+    "applicationType": "Back End",
     "technologies": ["HTML", "JavaScript", "Ruby", "Ruby on Rails"],
     "features": [
       "Server side rendering",
