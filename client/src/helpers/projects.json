@@ -14,7 +14,7 @@
   },
   {
     "projectName": "Grazioso",
-    "imageUrl": "https://via.placeholder.com/300x150/Gr%20https://placeholder.com/",
+    "imageUrl": "./assets/images/projects/Grazioso.png",
     "applicationType": "Command Line",
     "technologies": ["Java"],
     "features": [
