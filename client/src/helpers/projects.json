@@ -26,6 +26,19 @@
     "repoUrl": "https://github.com/chris-baird/Grazioso"
   },
   {
+    "projectName": "Squad Up",
+    "imageUrl": "./assets/images/projects/squadup.png",
+    "applicationType": "Full Stack",
+    "technologies": ["Node", "Express", "Angular.js"],
+    "features": [
+      "Rest API",
+      "Authentication system",
+      "Single Page Application"
+    ],
+    "liveUrl": "https://squadupnow.herokuapp.com",
+    "repoUrl": "https://github.com/chris-baird/squad-up"
+  },
+  {
     "projectName": "Alien Fishing Panic",
     "imageUrl": "./assets/images/projects/AlienFishingPanic.png",
     "applicationType": "Command Line",
