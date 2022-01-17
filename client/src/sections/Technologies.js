@@ -66,13 +66,15 @@ export default function Technologies() {
           </Modal>
         </div>
         <Row>
-          {technologies.map((technology) => (
-            <TechnologyCard
-              key={technology._id}
-              imageUrl={technology.imageUrl}
-              technologyName={technology.technologyName}
-            />
-          ))}
+          {technologies.map((value) => ({ value, sort: Math.random() }))
+            .sort((a, b) => a.sort - b.sort)
+            .map(({ value }) => value).map((technology) => (
+              <TechnologyCard
+                key={technology._id}
+                imageUrl={technology.imageUrl}
+                technologyName={technology.technologyName}
+              />
+            ))}
         </Row>
       </Container>
     </section>
