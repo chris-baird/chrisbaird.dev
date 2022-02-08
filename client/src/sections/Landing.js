@@ -26,11 +26,10 @@ export default function Landing() {
             <h1 className="font-weight-bolder">Chris Baird</h1>
             <h2 className="mt-2 mb-2">Full Stack Web Developer</h2>
             <p className="lead">
-              Practical problem-solver with over three years of experience
+              Practical problem-solver with over five years of experience
               working with the JavaScript programming language. Uses a hands-on
               reverse engineering approach to learning and breaking down complex
-              problems. Seeking new learning opportunities, a team to grow with
-              and new software to build.
+              problems.
             </p>
             <a href="#portfolio">
               <Button color="light" className="mr-2">
