@@ -12,7 +12,7 @@ export default function About() {
             <img
               src="./assets/images/misc/ME.png"
               alt="Placeholder of me"
-              className="img-fluid rounded d-block mx-auto mb-5 w-25"
+              className="img-fluid rounded d-block mx-auto mb-5 w-50"
             />
           </Col>
           <Col xs="12" sm="12" md="6" lg="6" xl="6">
