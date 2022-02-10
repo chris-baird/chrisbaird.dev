@@ -19,7 +19,7 @@ export default function Landing() {
             className="text-white"
             xs="12"
             sm="12"
-            md={{ size: 8, offset: 4 }}
+            md="8"
             lg="8"
             xl="8"
           >
