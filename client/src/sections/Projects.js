@@ -11,7 +11,6 @@ export default function Projects() {
           <Col xs="12">
             <h2 className="pt-5 text-center pb-3">Things I Made</h2>
           </Col>
-
           {PROJECTDATA.map((project) => (
             <Project key={project.projectName} {...project} />
           ))}
