@@ -1,5 +1,4 @@
 import React from "react"
-import DeveloperInfo from "./DeveloperInfo"
 import { Row, Col, Container } from "reactstrap"
 
 export default function About() {
