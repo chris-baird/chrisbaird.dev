@@ -7,16 +7,16 @@ export default function About() {
       <Container>
         <Row className="mt-5">
           <Col xs="12" sm="12" md="6" lg="6" xl="6">
-            <h2 className="text-center mb-5">Hello, I'm Chris</h2>
             <img
               src="./assets/images/misc/ME.png"
               alt="Placeholder of me"
-              className="img-fluid rounded d-block mx-auto mb-5 w-50"
+              className="img-fluid rounded d-block mx-auto mb-5 w-75"
             />
           </Col>
           <Col xs="12" sm="12" md="6" lg="6" xl="6">
+            <h2 className="mb-5">Hello, I'm Chris</h2>
             <p className="lead">
-              I am a 35-year-old software engineer with over five years of professional experience working with JavaScript and the MERN stack (Mongo/MySql, Express, React, Node js). I am an extremely self-sufficient individual that is more than capable of rapidly teaching myself new technologies, with the capability to turn around and instruct others on what I just learned. I am two years into obtaining my bachelor of computer science, where I have completed my Python, Java, C++, and Data Science classes with A's. I am a respectful person, have a high work ethic, and enjoy working with others when needed. I strive to create robust and scalable software with clean and sensible code that will stand the test of time.
+              I am a software engineer with over five years of professional experience working with JavaScript and the MERN stack (Mongo/MySql, Express, React, Node js). I am an extremely self-sufficient individual that is more than capable of rapidly teaching myself new technologies, with the capability to turn around and instruct others on what I just learned. I am two years into obtaining my bachelor of computer science, where I have completed my Python, Java, C++, and Data Science classes with A's. I am a respectful person, have a high work ethic, and enjoy working with others when needed. I strive to create robust and scalable software with clean and sensible code that will stand the test of time.
             </p>
           </Col>
         </Row>
