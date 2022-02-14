@@ -42,9 +42,9 @@ export default function Technologies() {
   }, [technologies]);
 
   return (
-    <section className="bg-light pb-5">
+    <section className="pb-5">
       <Container>
-        <h2 className="mt-5 mb-5 pt-5 text-center">Technologies I Have Worked With</h2>
+        <h2 className="mb-5 pt-5 text-center">Technologies I Have Worked With</h2>
         <div>
           {user.email ? (
             <Button

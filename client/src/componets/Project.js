@@ -35,12 +35,12 @@ export default function Project({
         </CardSubtitle>
         <section className="d-flex justify-content-center">
           {technologies.map((technology) => (
-            <img alt={technology + " icon"} style={{ width: "40px" }} class="m-1" src={`/assets/images/projects/techIcons/${technology}.svg`}></img>
+            <img key={technology} alt={technology + " icon"} style={{ width: "40px" }} className="m-1" src={`/assets/images/projects/techIcons/${technology}.svg`}></img>
           ))}
         </section>
         <Row className="mt-3">
           <Col xs="12" sm="12" md="12" lg="12" xl="12">
-            <a class="btn btn-outline-success d-block mx-auto w-75 border" href={liveUrl} target="blank">
+            <a className="btn btn-outline-success d-block mx-auto w-75 border" href={liveUrl} target="blank">
               Check it out
             </a>
           </Col>
