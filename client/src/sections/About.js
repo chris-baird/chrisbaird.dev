@@ -21,17 +21,13 @@ export default function About() {
           </Col>
         </Row>
         <Row className="mt-5 mb-5">
-          <Col className="mb-5" xs="12" sm="12" md="4" lg="4" xl="4">
-            <h3 className="text-center">Personality Type</h3>
-            <p className="text-center">INTP</p>
-            <img className="w-50 d-block mx-auto" src="/assets/images/misc/mbti.png" alt="intp man solving a pizzle" />
-          </Col>
-          <Col className="mb-5" xs="12" sm="12" md="4" lg="4" xl="4">
+
+          {/* <Col className="mb-5" xs="12" sm="12" md="4" lg="4" xl="4">
             <h3 className="text-center">Astrological Sign</h3>
             <p className="text-center mb-4">Scorpio</p>
             <img className="w-75 d-block mx-auto" src="/assets/images/misc/as.png" alt="intp man solving a pizzle" />
-          </Col>
-          <Col className="mb-5" xs="12" sm="12" md="4" lg="4" xl="4">
+          </Col> */}
+          <Col className="mb-5" xs="12" sm="12" md="6" lg="6" xl="6">
             <h3 className="text-center mb-5">Intrests</h3>
             <ul className="list-unstyled lead">
               <li><span className="text-muted font-weight-bold">Music:</span> Rock, Thrash Metal, Classic Rock</li>
@@ -40,6 +36,11 @@ export default function About() {
               <li><span className="text-muted font-weight-bold">Sports</span> Hockey, Baseball, Nascar</li>
               <li><span className="text-muted font-weight-bold">Misc</span> Reverse Engineering, Aircraft, Design Patterns</li>
             </ul>
+          </Col>
+          <Col className="mb-5" xs="12" sm="12" md="6" lg="6" xl="6">
+            <h3 className="text-center">Personality Type</h3>
+            <p className="text-center">INTP</p>
+            <img className="w-25 d-block mx-auto" src="/assets/images/misc/mbti.png" alt="intp man solving a pizzle" />
           </Col>
         </Row>
       </Container>
