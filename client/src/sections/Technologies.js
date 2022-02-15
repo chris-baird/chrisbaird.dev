@@ -44,7 +44,10 @@ export default function Technologies() {
   return (
     <section className="pb-5">
       <Container>
-        <h2 className="mb-5 pt-5 text-center">Technologies I Have Worked With</h2>
+        <h2 className="mb-5 pt-5 text-center">My Tech Stack</h2>
+      </Container>
+      <Container>
+        <h2 className="mb-5 pt-5 text-center">Everything Else</h2>
         <div>
           {user.email ? (
             <Button
