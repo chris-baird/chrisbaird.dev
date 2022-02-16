@@ -43,8 +43,24 @@ export default function Technologies() {
 
   return (
     <section className="pb-5">
-      <Container>
-        <h2 className="mb-5 pt-5 text-center">My Tech Stack</h2>
+      <h2 className="mb-5 pt-5 text-center">My Tech Stack</h2>
+      <Container className="d-flex flex-row flex-wrap flex-sm-wrap flex-md-nowrap flex-lg-nowrap flex-xl-nowrap">
+        <section>
+          <section className="d-flex justify-content-center">
+            <img className="w-25 m-3" src="assets/images/projects/techIcons/MongoDB.svg" alt="MongoDB Icon" />
+            <img className="w-25 m-3" src="assets/images/projects/techIcons/Express.svg" alt="Express Icon" />
+          </section>
+          <section className="d-flex justify-content-center">
+            <img className="w-25 m-3" src="assets/images/projects/techIcons/React.svg" alt="React Icon" />
+            <img className="w-25 m-3" src="assets/images/projects/techIcons/Node.svg" alt="Node Icon" />
+          </section>
+        </section>
+        <section>
+          <p><span className="lead">MongoDB</span> ipsum dolor sit amet consectetur adipisicing elit. Ipsum ex placeat repellat! Dolor rem et officia perspiciatis numquam accusamus.</p>
+          <p><span className="lead">Express</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ex placeat repellat! Dolor rem et officia perspiciatis numquam accusamus.</p>
+          <p><span className="lead">React</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ex placeat repellat! Dolor rem et officia perspiciatis numquam accusamus.</p>
+          <p><span className="lead">Node</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ex placeat repellat! Dolor rem et officia perspiciatis numquam accusamus.</p>
+        </section>
       </Container>
       <Container>
         <h2 className="mb-5 pt-5 text-center">Everything Else</h2>
