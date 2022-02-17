@@ -71,30 +71,30 @@ export default function EmailForm({ handleSetEmails }) {
             <small>Best Regards, Chris Baird</small>
           </Alert>
           <Row>
-            <Col xs="12" sm="12" md="6" lg="6" xl="6">
+            <Col xs="12" sm="12" md="12" lg="12" xl="12">
               <FormGroup>
-                <Label>Name</Label>
-                <Input
-                  name="name"
-                  type="text"
-                  onChange={handleChange}
-                  value={values.name}
-                  placeholder="Enter your name."
-                />
+                <Label className="w-100">Name
+                  <Input
+                    name="name"
+                    type="text"
+                    onChange={handleChange}
+                    value={values.name}
+                    placeholder="Enter your name."
+                  /></Label>
                 <ErrorMessage name="name" className="text-danger">
                   {(error) => <p className="text-danger">{error}</p>}
                 </ErrorMessage>
               </FormGroup>
             </Col>
-            <Col xs="12" sm="12" md="6" lg="6" xl="6">
+            <Col xs="12" sm="12" md="12" lg="12" xl="12">
               <FormGroup>
-                <Label>Email</Label>
-                <Input
-                  name="email"
-                  type="text"
-                  onChange={handleChange}
-                  value={values.email}
-                />
+                <Label className="w-100">Email
+                  <Input
+                    name="email"
+                    type="text"
+                    onChange={handleChange}
+                    value={values.email}
+                  /></Label>
                 <ErrorMessage name="email" className="text-danger">
                   {(error) => <p className="text-danger">{error}</p>}
                 </ErrorMessage>
@@ -102,25 +102,25 @@ export default function EmailForm({ handleSetEmails }) {
             </Col>
           </Row>
           <FormGroup>
-            <Label>Subject</Label>
-            <Input
-              name="subject"
-              type="text"
-              onChange={handleChange}
-              value={values.subject}
-            />
+            <Label className="w-100">Subject
+              <Input
+                name="subject"
+                type="text"
+                onChange={handleChange}
+                value={values.subject}
+              /></Label>
             <ErrorMessage name="subject" className="text-danger">
               {(error) => <p className="text-danger">{error}</p>}
             </ErrorMessage>
           </FormGroup>
           <FormGroup>
-            <Label>Message</Label>
-            <Input
-              name="message"
-              type="textarea"
-              onChange={handleChange}
-              value={values.message}
-            />
+            <Label className="w-100">Message
+              <Input
+                name="message"
+                type="textarea"
+                onChange={handleChange}
+                value={values.message}
+              /></Label>
             <ErrorMessage name="message" className="text-danger">
               {(error) => <p className="text-danger">{error}</p>}
             </ErrorMessage>

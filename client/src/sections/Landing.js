@@ -6,10 +6,10 @@ export default function Landing() {
       className="landing-section"
       style={
         {
-          // backgroundImage: "url(./landing-bg.png)",
-          // backgroundRepeat: "no-repeat",
-          // backgroundSize: "cover",
-          // backgroundPosition: "center",
+          backgroundImage: "url(./assets/images/misc/bg.webp)",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }
       }
     >

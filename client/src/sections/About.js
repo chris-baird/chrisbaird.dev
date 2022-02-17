@@ -15,8 +15,8 @@ export default function About() {
           </Col>
           <Col xs="12" sm="12" md="6" lg="6" xl="6">
             <h2 className="mb-5 text-center">A bit about me</h2>
-            <p className="lead">
-              I am a software engineer with over five years of professional experience working with JavaScript and the MERN stack (Mongo/MySql, Express, React, Node js). I am an extremely self-sufficient individual that is more than capable of rapidly teaching myself new technologies, with the capability to turn around and instruct others on what I just learned. I am two years into obtaining my bachelor of computer science, where I have completed my Python, Java, C++, and Data Science classes with A's. I am a respectful person, have a high work ethic, and enjoy working with others when needed. I strive to create robust and scalable software with clean and sensible code that will stand the test of time.
+            <p className="">
+              <span className="lead">Software Engineer</span> with over five years of professional experience working with JavaScript and the MERN stack (Mongo/MySql, Express, React, Node js). I am an extremely self-sufficient individual that is more than capable of rapidly teaching myself new technologies, with the capability to turn around and instruct others on what I just learned. I am two years into obtaining my bachelor of computer science, where I have completed my Python, Java, C++, and Data Science classes with A's. I am a respectful person, have a high work ethic, and enjoy working with others when needed. I strive to create robust and scalable software with clean and sensible code that will stand the test of time.
             </p>
           </Col>
         </Row>
@@ -38,7 +38,7 @@ export default function About() {
             size: 6
           }} lg="6" xl="6">
             <h3 className="text-center mb-5">Intrests</h3>
-            <ul className="list-unstyled lead">
+            <ul className="list-unstyled">
               <li><span className="text-muted font-weight-bold">Music:</span> Rock, Thrash Metal, Classic Rock</li>
               <li><span className="text-muted font-weight-bold">Animals:</span> Cats, Dogs, Birds</li>
               <li><span className="text-muted font-weight-bold">TV/Movies:</span> Ancient Aliens, Mr Robot, Silicon valley</li>
