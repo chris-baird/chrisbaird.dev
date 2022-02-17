@@ -53,7 +53,7 @@
   },
   {
     "projectName": "Chrisbaird.dev",
-    "imageUrl": "./assets/images/projects/projectTest.png",
+    "imageUrl": "./assets/images/projects/CB.png",
     "applicationType": "Full Stack",
     "technologies": ["React", "Node", "Express", "MongoDB"],
     "features": [
