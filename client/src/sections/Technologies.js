@@ -13,6 +13,7 @@ import {
 import { getTechnologies } from "../helpers/api";
 import UserContext from "../contexts/UserContext";
 
+
 export default function Technologies() {
   const [technologies, setTechnologies] = useState([]);
 
@@ -47,11 +48,11 @@ export default function Technologies() {
       <Container>
         <h2 className="mb-5 mt-5 pt-5 text-center">My Tech Stack</h2>
         <Row className="mb-5">
-          <Col xs={12} sm={12} md={6} lg={6} xl={6} className="d-flex">
-            <img className="w-25 m-3" src="assets/images/projects/techIcons/MongoDB.svg" alt="MongoDB Icon" />
-            <img className="w-25 m-3" src="assets/images/projects/techIcons/Express.svg" alt="Express Icon" />
-            <img className="w-25 m-3" src="assets/images/projects/techIcons/React.svg" alt="React Icon" />
-            <img className="w-25 m-3" src="assets/images/projects/techIcons/Node.svg" alt="Node Icon" />
+          <Col xs={12} sm={12} md={6} lg={6} xl={6} className="d-flex flex-row flex-wrap justify-content-center">
+            <img className="w-25 m-4" src="assets/images/projects/techIcons/MongoDB.svg" alt="MongoDB Icon" />
+            <img className="w-25 m-4" src="assets/images/projects/techIcons/Express.svg" alt="Express Icon" />
+            <img className="w-25 m-4" src="assets/images/projects/techIcons/React.svg" alt="React Icon" />
+            <img className="w-25 m-4" src="assets/images/projects/techIcons/Node.svg" alt="Node Icon" />
           </Col>
           <Col xs={12} sm={12} md={6} lg={6} xl={6}>
             <p className="text-muted"><span className="lead font-weight-bold">MongoDB</span> With Flexible document schemas, High speed, and Scalability, MongoDb is an enjoyable database that is easy to work with within various situations.</p>
