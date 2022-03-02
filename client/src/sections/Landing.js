@@ -24,7 +24,7 @@ export default function Landing() {
             xl="12"
           >
             <h1 className="font-weight-bolder">Chris Baird</h1>
-            <h2 className="mt-2 mb-2">Full Stack Web Developer</h2>
+            <h2 className="mt-2 mb-2">Software Engeneer</h2>
             <p className="lead w-75 mx-auto">
               Practical problem-solver with over five years of JavaScript experience creating Rest API’s and data-driven single-page applications using modern web technologies
             </p>

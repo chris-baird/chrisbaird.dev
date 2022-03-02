@@ -19,6 +19,7 @@ export default function Project({
   technologies,
   liveUrl,
   repoUrl,
+  description
 }) {
   return (
     <Col className="m-5 pl-5 pr-5 mx-auto d-flex flex-column justify-content-between" xs="12" sm="12" md="6" lg="4" xl="4">
@@ -28,7 +29,7 @@ export default function Project({
       <CardTitle className="mb-2 pb-2 border-bottom font-weight-bold text-center" tag="h4">
         {projectName}
       </CardTitle>
-      <p>Anim incididunt labore ex eu. Minim exercitation exercitation adipisicing nisi ullamco.</p>
+      <p>{description}</p>
       <section>
         <CardSubtitle tag="h6" className="mb-3 text-muted">
           Built With

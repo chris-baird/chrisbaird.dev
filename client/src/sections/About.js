@@ -20,7 +20,7 @@ export default function About() {
             </p>
           </Col>
         </Row>
-        <Row className="mt-5 mb-5">
+        {/* <Row className="mt-5 mb-5">
           <Col className="mb-5" xs={{
             order: 2,
             size: 12
@@ -55,7 +55,7 @@ export default function About() {
               <img className="w-25 d-block mx-auto" src="/assets/images/misc/mbti.png" alt="intp man solving a pizzle" />
             </a>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </section>
   )

@@ -74,7 +74,7 @@ export default function Technologies() {
             <img className="w-25 m-3" src="assets/images/projects/techIcons/Ruby.svg" alt="Ruby Icon" />
           </Col>
         </Row>
-        <h2 className="mb-5 pt-5 text-center">Tech Tools</h2>
+        <h2 className="mb-5 pt-5 text-center">Development Tools</h2>
         <Row className="mb-5">
           <Col xs={12} sm={12} md={6} lg={6} xl={6} className="d-flex justify-content-center">
             <img className="w-25 m-3" src="assets/images/projects/techIcons/Git.svg" alt="Git Icon" />
