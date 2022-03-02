@@ -57,11 +57,6 @@ const NavBar = ({ setUser }) => {
                 </NavLink>
               </NavItem>
               <NavItem className="ml-auto">
-                <NavLink className="text-white" href="#work" onClick={toggle}>
-                  Work Experience
-                </NavLink>
-              </NavItem>
-              <NavItem className="ml-auto">
                 <NavLink
                   className="text-white"
                   href="#contact"
@@ -70,7 +65,8 @@ const NavBar = ({ setUser }) => {
                   Contact
                 </NavLink>
               </NavItem>
-              <NavItem className="ml-auto">
+              {/* TODO: Relocate to footer */}
+              {/* <NavItem className="ml-auto">
                 {!user.email ? (
                   <NavLink
                     className="text-white"
@@ -91,7 +87,7 @@ const NavBar = ({ setUser }) => {
                     Logout
                   </NavLink>
                 )}
-              </NavItem>
+              </NavItem> */}
             </Nav>
           </Collapse>
         </Container>

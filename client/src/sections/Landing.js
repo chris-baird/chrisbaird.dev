@@ -6,30 +6,27 @@ export default function Landing() {
       className="landing-section"
       style={
         {
-          // backgroundImage: "url(./landing-bg.png)",
-          // backgroundRepeat: "no-repeat",
-          // backgroundSize: "cover",
-          // backgroundPosition: "center",
+          backgroundImage: "url(./assets/images/misc/bg.webp)",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }
       }
     >
-      <Container className="pt-5 pb-5">
+      <Container className="pt-5 pb-5 text-center">
         <Row className="mb-5 mt-5">
           <Col
             className="text-white"
             xs="12"
             sm="12"
-            md="8"
-            lg="8"
-            xl="8"
+            md="12"
+            lg="12"
+            xl="12"
           >
             <h1 className="font-weight-bolder">Chris Baird</h1>
-            <h2 className="mt-2 mb-2">Full Stack Web Developer</h2>
-            <p className="lead">
-              Practical problem-solver with over five years of experience
-              working with the JavaScript programming language. Uses a hands-on
-              reverse engineering approach to learning and breaking down complex
-              problems.
+            <h2 className="mt-2 mb-2">Software Engeneer</h2>
+            <p className="lead w-75 mx-auto">
+              Practical problem-solver with over five years of JavaScript experience creating Rest API’s and data-driven single-page applications using modern web technologies
             </p>
             <a href="#portfolio">
               <Button color="light" className="mr-2">

@@ -1,39 +1,20 @@
 [
+
+    
     {
-        "title": "HARDWARE I USE",
-        "listIcon": "hardware.png",
-        "list": [
-            "CPU: AMD Ryzen 5 3600",
-            "RAM: 16gb",
-            "GPU: Radeon Nitro R9 Fury 4GB HBM Nitro",
-            "MONITOR: MSI Optix 34 inch ultrawide monitor",
-            "LAPTOP: MacBook air 2015 13 inch"
-        ]
+        "title":"Personalty",
+        "listIcon": "fav-tech.png",
+        "list":["INTP","Node", "React", "Docker", "Git", "Linux"]
     },
     {
-        "title": "SOFTWARE I USE",
-        "listIcon": "software.png",
-        "list": [
-            "OPERATING SYSTEM: Ubuntu/Windows",
-            "SHELL: ZSH/Oh My Zsh",
-            "TEXT EDITOR: GNU Nano",
-            "CODE EDITOR: Visual Studio Code"
-        ]
-    },
-    {
-        "title": "MY INTERESTS",
+        "title": "Interests",
         "listIcon": "interests.png",
         "list": [
-            "ANIMALS: Cats, Dogs, Birds",
-            "TIME WASTER: Learning new technologies", 
-            "HOBBIES: Lego Technic, STEAM kits",
-            "GUILTY PLEASURE: Alien Conspiracies"
+            "Wildlife",
+            "Youtube", 
+            "Raspberry Pi",
+            "Ancient Egypt"
         ]
-    },
-    {
-        "title":"FAVORITE TECHNOLOGIES",
-        "listIcon": "fav-tech.png",
-        "list":["JavaScript","Node", "React", "Docker", "Git", "Linux"]
     },
     {
         "title": "WORDS TO DESCRIBE ME",

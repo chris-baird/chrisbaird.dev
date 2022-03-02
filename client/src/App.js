@@ -19,11 +19,9 @@ function App() {
       <UserContext.Provider value={user}>
         <Navbar setUser={setUser} />
         <Landing />
-        <About />
-        <DeveloperInfo />
-        <Projects />
         <Technologies />
-        <Work />
+        <About />
+        <Projects />
         <Commitment />
         <Contact />
         <Footer />

@@ -14,7 +14,7 @@ import {
 export default function DeveloperInfo() {
   console.log(db)
   return (
-    <section className="pt-5 pb-5 bg-dark">
+    <section className="pt-5 pb-5">
       <Container>
         <h2 className="text-center text-white m-3 pb-3">Developer Info</h2>
         <Row>

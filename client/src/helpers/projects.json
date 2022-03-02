@@ -3,7 +3,12 @@
     "projectName": "NanoUrl",
     "imageUrl": "./assets/images/projects/nanourl.png",
     "applicationType": "Back End",
-    "technologies": ["Node", "Express", "JavaScript"],
+    "technologies": [
+      "Node",
+      "Express",
+      "JavaScript"
+    ],
+    "description": "URL shortening rest API. It takes a long URL and gives a reusable short URL that redirects to the original URL when used.",
     "features": [
       "Rest API",
       "Image URL shortening service",
@@ -13,49 +18,16 @@
     "repoUrl": "https://github.com/chris-baird/nanourl"
   },
   {
-    "projectName": "Grazioso",
-    "imageUrl": "./assets/images/projects/Grazioso.png",
-    "applicationType": "Command Line",
-    "technologies": ["Java"],
-    "features": [
-      "Object oriented programming",
-      "Strongly typed language",
-      "Rigid user input validation"
-    ],
-    "liveUrl": "https://replit.com/@ChrisBaird/Grazioso#Main.java",
-    "repoUrl": "https://github.com/chris-baird/Grazioso"
-  },
-  {
-    "projectName": "Squad Up",
-    "imageUrl": "./assets/images/projects/squadup.png",
-    "applicationType": "Full Stack",
-    "technologies": ["Node", "Express", "Angular.js"],
-    "features": [
-      "Rest API",
-      "Authentication system",
-      "Single Page Application"
-    ],
-    "liveUrl": "https://squadupnow.herokuapp.com",
-    "repoUrl": "https://github.com/chris-baird/squad-up"
-  },
-  {
-    "projectName": "Alien Fishing Panic",
-    "imageUrl": "./assets/images/projects/AlienFishingPanic.png",
-    "applicationType": "Command Line",
-    "technologies": ["Python"],
-    "features": [
-      "Functional design pattern",
-      "State Reducer pattern",
-      "Function Recursion pattern"
-    ],
-    "liveUrl": "https://replit.com/@ChrisBaird/Alien-Fishing-Panic#main.py",
-    "repoUrl": "https://github.com/chris-baird/Alien-Fishing-Panic"
-  },
-  {
     "projectName": "Chrisbaird.dev",
-    "imageUrl": "./assets/images/projects/projectTest.png",
+    "imageUrl": "./assets/images/projects/CB.png",
     "applicationType": "Full Stack",
-    "technologies": ["React", "Node", "Express", "MongoDB"],
+    "technologies": [
+      "React",
+      "Node",
+      "Express",
+      "MongoDB"
+    ],
+    "description": "A full-stack portfolio built with authentication, single-page rendering, and image blob uploads features.",
     "features": [
       "Authentication system",
       "Image upload service",
@@ -66,19 +38,16 @@
     "repoUrl": "https://github.com/chris-baird/chrisbaird.dev"
   },
   {
-    "projectName": "Joshua Christopher Full Service Salon Spa",
-    "imageUrl": "./assets/images/projects/JCSALON.png",
-    "applicationType": "Content Management System",
-    "technologies": ["Wordpress", "PHP", "CSS"],
-    "features": ["Responsive design", "Custom styling"],
-    "liveUrl": "http://www.joshuachristopher.com",
-    "repoUrl": null
-  },
-  {
     "projectName": "Hacks For Life",
     "imageUrl": "./assets/images/projects/LH.png",
     "applicationType": "Back End",
-    "technologies": ["HTML", "JavaScript", "Ruby", "Rails"],
+    "technologies": [
+      "HTML",
+      "JavaScript",
+      "Ruby",
+      "Rails"
+    ],
+    "description": "Crud application that includes server-side rendering, user authentication, blob image storage, and responsive CSS.",
     "features": [
       "Server side rendering",
       "Rails REST API",
@@ -87,5 +56,56 @@
     ],
     "liveUrl": "https://hacks-for-life.herokuapp.com/hacks",
     "repoUrl": "https://github.com/chris-baird/life_hacks"
+  },
+  {
+    "projectName": "Squad Up",
+    "imageUrl": "./assets/images/projects/squadup.png",
+    "applicationType": "Full Stack",
+    "technologies": [
+      "Node",
+      "Express",
+      "Angular.js"
+    ],
+    "description": "Single page application powered by Angular.js. Rest server with Postgres database, authentication, and image storage service.",
+    "features": [
+      "Rest API",
+      "Authentication system",
+      "Single Page Application"
+    ],
+    "liveUrl": "https://squadupnow.herokuapp.com",
+    "repoUrl": "https://github.com/chris-baird/squad-up"
+  },
+  {
+    "projectName": "Grazioso",
+    "imageUrl": "./assets/images/projects/Grazioso.png",
+    "applicationType": "Command Line",
+    "technologies": [
+      "Java"
+    ],
+    "description": "Command Line Content Management System uses inheritance, encapsulation, and input validation for a smooth user experience.",
+    "features": [
+      "Object oriented programming",
+      "Strongly typed language",
+      "Rigid user input validation"
+    ],
+    "liveUrl": "https://replit.com/@ChrisBaird/Grazioso#Main.java",
+    "repoUrl": "https://github.com/chris-baird/Grazioso"
+  },
+  {
+    "projectName": "Joshua Christopher Full Service Salon Spa",
+    "imageUrl": "./assets/images/projects/JCSALON.png",
+    "applicationType": "Content Management System",
+    "technologies": [
+      "Wordpress",
+      "PHP",
+      "CSS"
+    ],
+    "description": "A content management system that reflects a client's beauty spa business. Fully responsive, custom CSS, mobile-friendly.",
+    "features": [
+      "Responsive design",
+      "Custom styling"
+    ],
+    "liveUrl": "http://www.joshuachristopher.com",
+    "repoUrl": null
   }
 ]

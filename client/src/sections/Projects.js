@@ -9,7 +9,7 @@ export default function Projects() {
       <Container>
         <Row>
           <Col xs="12">
-            <h2 className="pt-5 text-center pb-3">Things I Made</h2>
+            <h2 className="pt-5 text-center pb-3">Some Of The Things I've Built</h2>
           </Col>
           {PROJECTDATA.map((project) => (
             <Project key={project.projectName} {...project} />
