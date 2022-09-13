@@ -63,7 +63,7 @@ export default function Contact() {
                   ></img>
                 </a>
               </Col>
-              <Col md="6">
+              {/* <Col md="6">
                 <a
                   href="https://replit.com/@ChrisBaird"
                   target="blank"
@@ -75,7 +75,7 @@ export default function Contact() {
                     alt="Repl icon"
                   ></img>
                 </a>
-              </Col>
+              </Col> */}
             </Row>
           </Col>
         </Row>
