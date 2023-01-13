@@ -54,7 +54,7 @@
       "Authentication system",
       "Image upload service"
     ],
-    "liveUrl": "https://hacks-for-life.herokuapp.com/hacks",
+    "liveUrl": "https://github.com/chris-baird/life_hacks",
     "repoUrl": "https://github.com/chris-baird/life_hacks"
   },
   {
@@ -72,7 +72,7 @@
       "Authentication system",
       "Single Page Application"
     ],
-    "liveUrl": "https://squadupnow.herokuapp.com",
+    "liveUrl": "https://github.com/chris-baird/squad-up",
     "repoUrl": "https://github.com/chris-baird/squad-up"
   },
   {
