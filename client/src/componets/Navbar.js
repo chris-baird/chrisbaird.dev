@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext } from "react"
 import {
   Collapse,
   Container,
@@ -11,23 +11,23 @@ import {
   Nav,
   NavItem,
   NavLink,
-} from "reactstrap";
-import LoginForm from "./LoginForm";
-import UserContext from "../contexts/UserContext";
+} from "reactstrap"
+import LoginForm from "./LoginForm"
+import UserContext from "../contexts/UserContext"
 
 const NavBar = ({ setUser }) => {
-  const user = useContext(UserContext);
+  const user = useContext(UserContext)
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
-  const toggle = () => setIsOpen(!isOpen);
+  const toggle = () => setIsOpen(!isOpen)
 
-  const [modal, setModal] = useState(false);
+  const [modal, setModal] = useState(false)
 
   const toggleModal = () => {
-    setIsOpen(false);
-    setModal(!modal);
-  };
+    setIsOpen(false)
+    setModal(!modal)
+  }
 
   return (
     <div>
@@ -39,7 +39,10 @@ const NavBar = ({ setUser }) => {
           >
             CB
           </NavbarBrand>
-          <NavbarToggler onClick={toggle} className="border-light bg-white p-3" />
+          <NavbarToggler
+            onClick={toggle}
+            className="border-light bg-white p-3"
+          />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem className="ml-auto">
@@ -66,7 +69,7 @@ const NavBar = ({ setUser }) => {
                 </NavLink>
               </NavItem>
               {/* TODO: Relocate to footer */}
-              {/* <NavItem className="ml-auto">
+              <NavItem className="ml-auto">
                 {!user.email ? (
                   <NavLink
                     className="text-white"
@@ -80,14 +83,14 @@ const NavBar = ({ setUser }) => {
                     className="text-white"
                     href="#"
                     onClick={() => {
-                      setIsOpen(false);
-                      setUser({ email: null, password: null });
+                      setIsOpen(false)
+                      setUser({ email: null, password: null })
                     }}
                   >
                     Logout
                   </NavLink>
                 )}
-              </NavItem> */}
+              </NavItem>
             </Nav>
           </Collapse>
         </Container>
@@ -99,7 +102,7 @@ const NavBar = ({ setUser }) => {
         </ModalBody>
       </Modal>
     </div>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavBar
