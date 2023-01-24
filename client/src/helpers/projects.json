@@ -92,6 +92,21 @@
     "repoUrl": "https://github.com/chris-baird/Grazioso"
   },
   {
+    "projectName": "Alien Fishing Panic",
+    "imageUrl": "./assets/images/projects/AlienFishingPanic.png",
+    "applicationType": "Command Line",
+    "technologies": [
+      "Python"
+    ],
+    "description": "Command Line Game",
+    "features": [
+      "Game logic",
+      "Rigid user input validation"
+    ],
+    "liveUrl": "https://replit.com/@ChrisBaird/Alien-Fishing-Panic#main.py",
+    "repoUrl": "https://github.com/chris-baird/Alien-Fishing-Panic"
+  },
+  {
     "projectName": "Joshua Christopher Full Service Salon Spa",
     "imageUrl": "./assets/images/projects/JCSALON.png",
     "applicationType": "Content Management System",
