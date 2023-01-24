@@ -98,7 +98,7 @@
     "technologies": [
       "Python"
     ],
-    "description": "Command Line Game",
+    "description": "Command line game build with Python feature rich game logic and user input validation",
     "features": [
       "Game logic",
       "Rigid user input validation"
