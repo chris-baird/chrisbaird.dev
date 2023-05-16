@@ -105,22 +105,5 @@
     ],
     "liveUrl": "https://replit.com/@ChrisBaird/Alien-Fishing-Panic#main.py",
     "repoUrl": "https://github.com/chris-baird/Alien-Fishing-Panic"
-  },
-  {
-    "projectName": "Joshua Christopher Full Service Salon Spa",
-    "imageUrl": "./assets/images/projects/JCSALON.png",
-    "applicationType": "Content Management System",
-    "technologies": [
-      "Wordpress",
-      "PHP",
-      "CSS"
-    ],
-    "description": "A content management system that reflects a client's beauty spa business. Fully responsive, custom CSS, mobile-friendly.",
-    "features": [
-      "Responsive design",
-      "Custom styling"
-    ],
-    "liveUrl": "http://www.joshuachristopher.com",
-    "repoUrl": null
   }
 ]
