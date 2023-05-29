@@ -3,3 +3,4 @@ node_modules/
 **/coverage/
 bucketKey.json
 .package-lock.json
+logs/
