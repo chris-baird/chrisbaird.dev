@@ -6,13 +6,15 @@
     "technologies": [
       "Node",
       "Express",
-      "JavaScript"
+      "MongoDB",
+      "Redis"
     ],
-    "description": "URL shortening rest API. It takes a long URL and gives a reusable short URL that redirects to the original URL when used.",
+    "description": "URL shortening rest API. It takes a long URL and gives a reusable short URL that redirects to the original URL when used. Uses Redis caching for faster API performance",
     "features": [
       "Rest API",
       "Image URL shortening service",
-      "Documented"
+      "Documented",
+      "Caching"
     ],
     "liveUrl": "https://nano-url.onrender.com",
     "repoUrl": "https://github.com/chris-baird/nanourl"
